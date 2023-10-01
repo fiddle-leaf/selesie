@@ -1,0 +1,35 @@
+@use '../../config/_base' as * 
+
+.header
+    @include flex(column nowrap)
+
+.navbar
+    
+
+.links
+    @include flex(row wrap)
+    justify-content: space-evenly
+    list-style-type: none
+    padding-inline: 0
+
+    a
+        color: $link
+        text-decoration: none
+        font-weight: 700
+
+    a:hover
+        text-decoration: underline 4px #fce7f3
+        text-underline-offset: 2px
+        text-underline-position: under
+
+.title
+    line-height: 100%
+    font:
+        family: $title
+        size: 3rem
+        weight: normal
+
+    flex: 0
+    padding: 1rem
+    margin-block: 0
+
