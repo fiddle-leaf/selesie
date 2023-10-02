@@ -1,9 +1,11 @@
 @use '../../config/_base' as * 
 
 .header
-    @include flex(column nowrap)
+    @include flex(row nowrap)
+    align-items: center
 
-.navbar
+    nav
+        flex: 3
     
 
 .links
@@ -12,24 +14,38 @@
     list-style-type: none
     padding-inline: 0
 
+    li
+
     a
         color: $link
         text-decoration: none
         font-weight: 700
+        background: $underline
+        padding: $bit/6 $bit/2
+        border-radius: 4px
+        box-shadow: 2px 2px $bg
+        transition: 0.4s
 
     a:hover
-        text-decoration: underline 4px #fce7f3
-        text-underline-offset: 2px
-        text-underline-position: under
+        background: #fce7f3
+        outline: 1px solid $underline
+        transition: 0.4s
+        
 
 .title
-    line-height: 100%
-    font:
-        family: $title
-        size: 3rem
-        weight: normal
-
-    flex: 0
+    display: flex
+    justify-content: center
+    flex: 1
     padding: 1rem
-    margin-block: 0
+    
+    h1
+        margin-block: 0
+        font:
+            family: $title
+            weight: 400
+            size: 2rem
+        text-decoration: underline $bit/2 $underline
+        text-underline-position: under
+        text-underline-offset: -4px
+
 

@@ -4,7 +4,10 @@ import styles from "./Header.module.sass";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <nav className={styles.navbar}>
+      <div className={styles.title}>
+        <h1>Selesie</h1>
+      </div>
+      <nav>
         <ul className={styles.links}>
           <li>
             <NavLink to="/">Home</NavLink>
@@ -20,9 +23,6 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <div className={styles.title}>
-        <h1>Selesie</h1>
-      </div>
     </header>
   );
 }
