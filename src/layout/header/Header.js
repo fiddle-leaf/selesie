@@ -19,7 +19,9 @@ export default function Header() {
             <a href="https://github.com/fiddle-leaf">Github</a>
           </li>
           <li>
-            <a href="https://www.buymeacoffee.com/">Buy Me a Coffee</a>
+            <a href="https://www.buymeacoffee.com/fiddle.leaf">
+              Buy Me a Coffee
+            </a>
           </li>
         </ul>
       </nav>
