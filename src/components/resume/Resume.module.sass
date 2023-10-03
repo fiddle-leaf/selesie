@@ -1,2 +1,86 @@
+@use '../../config/_base' as *
+
 .resume
+    @include flex(column nowrap)
+    justify-content: center
+    align-items: center
     height: 100vh
+
+.body
+    @include flex(column nowrap)
+    max-width: 80vw
+    padding: $bit
+    line-height: 150%
+
+    h3
+        font-size: 1.5rem
+
+    a
+        color: #9d174d
+        text-decoration: none
+        font-weight: 600
+        transition: 0.25s
+
+    a:hover
+        color: #500724
+        transition: 0.5s
+
+
+.title
+    margin-block: 0
+    font:
+        size: 2.5rem
+        weight: 800
+
+.intro
+    font-size: 1.1rem
+
+.email
+    background: $underline
+    padding-inline: $bit/4
+
+.ongoing
+    margin-block: 0
+    background: #f5f5f4
+    padding-block: $bit/2
+    border-radius: 4px
+
+
+    a
+        text-decoration: underline 2px
+
+    .date
+        font-weight: 500
+
+.subtitle
+    margin-block: 0
+    text-transform: uppercase
+    letter-spacing: $bit/20
+    font:
+        size: 0.9rem
+        weight: 800
+
+.contact
+    margin-block: 0
+.details
+    margin-block: $bit/2
+    font-size: 0.9rem
+
+.exp
+    em
+        font-style: italic
+
+    strong
+        font-weight: 600
+    h5
+        margin-block: 0
+        font:
+            size: $bit
+            weight: 500
+
+.work
+    @include flex(column nowrap, $bit/2)
+
+    h6
+        margin-block: 0
+        font-size: $bit
