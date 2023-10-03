@@ -4,7 +4,7 @@ export default function Resume() {
     <main className={styles.resume}>
       <article className={styles.body}>
         <h2 className={styles.title}>Shanon Palomino Salinas</h2>
-        <div>
+        <div className={styles.blurb}>
           <p className={styles.intro}>
             Front-End Engineer building colorful and accessible User Interfaces.
           </p>
