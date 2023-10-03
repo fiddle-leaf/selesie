@@ -1,5 +1,6 @@
 @use '../../config/_base' as *
 
+
 .resume
     @include flex(column nowrap)
     justify-content: center
@@ -8,6 +9,7 @@
 
 .body
     @include flex(column nowrap)
+    margin-block-start: 3rem
     max-width: 80vw
     padding: $bit
     line-height: 150%
@@ -33,7 +35,12 @@
         weight: 800
 
 .intro
+    margin-block: $bit/2
     font-size: 1.1rem
+
+    &:before
+        content: url(https://64.media.tumblr.com/tumblr_lohoryRRTJ1qda978.gif)
+        padding-right: 0.5rem
 
 .email
     background: $underline
@@ -53,7 +60,7 @@
         font-weight: 500
 
 .subtitle
-    margin-block: 0
+    margin-block-start: $bit
     text-transform: uppercase
     letter-spacing: $bit/20
     font:
@@ -84,3 +91,6 @@
     h6
         margin-block: 0
         font-size: $bit
+
+.other
+    border-top: $bit/2 solid $underline

@@ -68,7 +68,7 @@ export default function Resume() {
             </div>
           </article>
         </article>
-        <article>
+        <article className={styles.other}>
           <h4 className={styles.subtitle}>Other Experience</h4>
           <article className={styles.work}>
             <div className={styles.exp}>
