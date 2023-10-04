@@ -16,6 +16,9 @@ export default function Header() {
             <NavLink to="resume">Resume</NavLink>
           </li>
           <li>
+            <NavLink to="photos">Photography</NavLink>
+          </li>
+          <li>
             <a href="https://github.com/fiddle-leaf">Github</a>
           </li>
           <li>
