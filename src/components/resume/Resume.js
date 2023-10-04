@@ -18,17 +18,45 @@ export default function Resume() {
         </div>
         <article>
           <h3>Work in Progress</h3>
-          <ul className={styles.ongoing}>
-            <li>
-              <a href="https://grow.google/" alt="Grow with Google website">
-                Grow with Google
-              </a>
-              <br />
-              <strong>UX Designer Certificate</strong>
-              <br />
-              <span className={styles.date}>October 2023 — March 2024.</span>
-            </li>
-          </ul>
+          <div className={styles.edu}>
+            <ul className={styles.ongoing}>
+              <li>
+                <a href="https://grow.google/" alt="Grow with Google website">
+                  Grow with Google
+                </a>
+                <br />
+                <strong>UX Designer Certificate</strong>
+                <br />
+                <span className={styles.date}>October 2023 — March 2024</span>
+              </li>
+            </ul>
+            <div className={styles.projects}>
+              <h4 className={styles.subtitle}>Projects</h4>
+              <ul>
+                <li>
+                  <em>
+                    <strong>Vacation Planner </strong>
+                    using the MERN Stack.
+                  </em>
+                  <ul>
+                    <li>
+                      Set transportation and budget details, add to-do lists or
+                      notes, and get forecast for day of arrival to destination.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <em>
+                    <strong>Astro Birth Day </strong>
+                    with Redux.js.
+                  </em>
+                  <ul>
+                    <li>Get forecast and moon data for your 2023 birthday!</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </article>
         <article>
           <h3>Professional Experience</h3>
@@ -37,7 +65,9 @@ export default function Resume() {
               <h5>
                 <em>Women in Software Engineering</em>
               </h5>
-              <strong>Per Scholas</strong>, Remote, May 2023 – September 2023.
+              <strong>Per Scholas</strong>, Remote
+              <br />
+              <span className={styles.date}>May 2023 – September 2023</span>
               <ul className={styles.details}>
                 <li>
                   Immersive training in Full-Stack Engineering with React.js,
@@ -49,7 +79,9 @@ export default function Resume() {
               <h5>
                 <em>Software Engineering Career Experience</em>
               </h5>
-              <strong> Apple, Inc</strong>, Remote, June 2021 – November 2021.
+              <strong> Apple, Inc</strong>, Remote
+              <br />
+              <span className={styles.date}>June 2021 – November 2021</span>
               <ul className={styles.details}>
                 <li>
                   Design, develop, and deploy new and existing software products
@@ -75,20 +107,29 @@ export default function Resume() {
               <h5>
                 <em>Specialist</em>
               </h5>
-              <strong>Apple, Inc</strong>, Washington, DC, April 2019 &ndash;
-              April 2023.
+              <strong>Apple, Inc</strong>, Washington, DC
+              <br />
+              <span className={styles.date}>April 2019 &ndash; April 2023</span>
               <ul className={styles.details}>
+                <li>
+                  Achieve sales metrics by providing guests with personalized
+                  solutions focused on identifying customers’ needs.
+                </li>
+                <li>
+                  Maintain functionality of all technology and visual
+                  merchandising displays.
+                </li>
                 <li>
                   Troubleshoot customer’s computer and device in-store and
                   remotely.
                 </li>
                 <li>
-                  Setup customer computer systems and install software
-                  components.
+                  Setup customer device systems and install software components.
                 </li>
+
                 <li>
                   Assist customers with online orders by successfully
-                  troubleshooting shipping, payment, or other order issues.
+                  troubleshooting shipping, payment, or other order inquiries.
                 </li>
               </ul>
             </div>
@@ -105,14 +146,6 @@ export default function Resume() {
                 <li>
                   Reconcile cash registers and safe, daily deposits, checks and
                   other forms of payment.
-                </li>
-                <li>
-                  Maintain functionality of all technology and visual
-                  merchandising displays.
-                </li>
-                <li>
-                  Achieve sales metrics by providing guests with personalized
-                  solutions focused on identifying customers’ needs.
                 </li>
                 <li>
                   Support teammates through feedback and advancement of internal
