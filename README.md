@@ -1,6 +1,6 @@
 # SELESIE: Portfolio
 
-A landing page for my work in Web Design, Photography, and Mindfulness.
+A landing page for my work in Web Development, Photography, and Mindfulness.
 
 ## Technologies Used
 
