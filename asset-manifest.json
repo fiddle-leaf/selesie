@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/selesie/static/css/main.c560d808.css",
-    "main.js": "/selesie/static/js/main.aed07d67.js",
+    "main.css": "/selesie/static/css/main.cabd056a.css",
+    "main.js": "/selesie/static/js/main.1c94ec3b.js",
     "static/media/programmer.svg": "/selesie/static/media/programmer.52a0be6a72a612d63c26ebc465c02594.svg",
     "static/media/portfolio.svg": "/selesie/static/media/portfolio.9caa436e2da00149cd5ef26e0fec6bc5.svg",
     "index.html": "/selesie/index.html",
-    "main.c560d808.css.map": "/selesie/static/css/main.c560d808.css.map",
-    "main.aed07d67.js.map": "/selesie/static/js/main.aed07d67.js.map"
+    "main.cabd056a.css.map": "/selesie/static/css/main.cabd056a.css.map",
+    "main.1c94ec3b.js.map": "/selesie/static/js/main.1c94ec3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c560d808.css",
-    "static/js/main.aed07d67.js"
+    "static/css/main.cabd056a.css",
+    "static/js/main.1c94ec3b.js"
   ]
 }
