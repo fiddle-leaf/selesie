@@ -49,6 +49,16 @@
     background: $underline
     padding-inline: calc($bit/4)
 
+.current
+    +flex(row wrap, 2rem)
+
+    div
+        flex: 2 0
+
+    div.skills
+        flex: 3
+    
+
 .ongoing
     margin-block: 0
     background: #f5f5f4
@@ -63,47 +73,13 @@
 .date
     font-weight: 500
 
-.edu 
-    @include flex(column nowrap, 2rem)
-    align-items: flex-start
-
-    .subtitle
-        margin-block: 0
-
-
-
-.subtitle
-    margin-block-start: $bit
-    text-transform: uppercase
-    letter-spacing: calc($bit/20)
-    font:
-        size: 0.9rem
-        weight: 800
-
-.contact
-    margin-block: 0
-.details
-    margin-block: calc($bit/2)
-    font-size: 0.9rem
-
-.exp
-    em
-        font-style: italic
-
-    strong
-        font-weight: 600
-    h5
-        margin-block: 0
-        font:
-            size: $bit
-            weight: 500
-
-.work
-    @include flex(column nowrap, calc($bit/2))
-
-    h6
-        margin-block: 0
-        font-size: $bit
-
 .other
     border-top: calc($bit/2) solid $underline
+
+.other
+    h5
+        font:
+            size: 1.05rem
+            weight: 600
+            style: italic
+        margin-block: calc($bit/3)

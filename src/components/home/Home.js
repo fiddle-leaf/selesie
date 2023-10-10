@@ -8,8 +8,8 @@ export default function Home() {
       <article className={styles.intro}>
         <h2 className={styles.title}>Hi! My name is Shanon.</h2>
         <p>
-          I am a Web Developer from Rockville, Maryland passionate about
-          colorful and accessible software.
+          I am a Front-End Engineer from Rockville, Maryland building colorful
+          and accessible User Interfaces.
         </p>
       </article>
       <article className={styles.info}>

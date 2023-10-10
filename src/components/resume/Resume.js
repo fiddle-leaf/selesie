@@ -6,7 +6,8 @@ export default function Resume() {
         <h2 className={styles.title}>Shanon Palomino Salinas</h2>
         <div className={styles.blurb}>
           <p className={styles.intro}>
-            Front-End Engineer building colorful and accessible User Interfaces.
+            Dedicated and highly motivated Software Engineer with a passion for
+            Web Design, User Experience, and solving complex software issues.
           </p>
           <p className={styles.contact}>
             <mark className={styles.email}>
@@ -16,9 +17,9 @@ export default function Resume() {
             Rockville, MD.
           </p>
         </div>
-        <article>
-          <h3>Work in Progress</h3>
-          <div className={styles.edu}>
+        <article className={styles.current}>
+          <div>
+            <h3>Work in Progress</h3>
             <ul className={styles.ongoing}>
               <li>
                 <a href="https://grow.google/" alt="Grow with Google website">
@@ -30,41 +31,72 @@ export default function Resume() {
                 <span className={styles.date}>October 2023 — March 2024</span>
               </li>
             </ul>
-            <div className={styles.projects}>
-              <h4 className={styles.subtitle}>Projects</h4>
+          </div>
+          <div className={styles.skills}>
+            <h3>Skills</h3>
+            <ul>
+              <li>
+                <strong>Web Development</strong> &ndash; HTML, CSS, JavaScript,
+                Bootstrap
+              </li>
+              <li>
+                <strong>Front-end Frameworks</strong> &ndash; React.js, Remix
+              </li>
+              <li>
+                <strong>Version Control</strong> &ndash; Git
+              </li>
+              <li>
+                <strong>UI/UX Design</strong> &ndash; Wireframing, Prototyping
+              </li>
+              <li>
+                <strong>Software Troubleshooting</strong> &ndash; Debugging,
+                Issue Resolution
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article className={styles.projects}>
+          <h3 className={styles.subtitle}>Projects</h3>
+          <ul>
+            <li>
+              <strong>Selesie: Personal Portfolio Website</strong>
+
               <ul>
                 <li>
-                  <em>
-                    <strong>Vacation Planner </strong>
-                    using the MERN Stack.
-                  </em>
-                  <ul>
-                    <li>
-                      Set transportation and budget details, add to-do lists or
-                      notes, and get forecast for day of arrival to destination.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <em>
-                    <strong>Astro Birth Day </strong>
-                    with Redux.js.
-                  </em>
-                  <ul>
-                    <li>Get forecast and moon data for your 2023 birthday!</li>
-                  </ul>
+                  A responsive personal website to showcase Web Design skills
+                  and projects utilizing React.js to create an interactive and
+                  visually appealing portfolio.
                 </li>
               </ul>
-            </div>
-          </div>
+            </li>
+            <li>
+              <strong>Plan_It</strong>
+
+              <ul>
+                <li>
+                  React.js vacation planner website implementing user
+                  authentication and real-time updates with MongoDB, Node.js,
+                  and Express server.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Astro Birth Day </strong>
+
+              <ul>
+                <li>
+                  Redux Project utilizing React.js gets forecast and moon data
+                  using the Weather API and fetch requests.
+                </li>
+              </ul>
+            </li>
+          </ul>
         </article>
         <article className={styles.other}>
           <h3>Professional Experience</h3>
           <article className={styles.work}>
             <div className={styles.exp}>
-              <h5>
-                <em>Women in Software Engineering</em>
-              </h5>
+              <h5>Women in Software Engineering</h5>
               <strong>Per Scholas</strong>, Remote
               <br />
               <span className={styles.date}>May 2023 – September 2023</span>
@@ -73,12 +105,15 @@ export default function Resume() {
                   Immersive training in Full-Stack Engineering with React.js,
                   MongoDB, Node.js, and Express.
                 </li>
+                <li>
+                  <strong>Coursework:</strong> Web Development Fundamentals,
+                  Data Structures and Algorithms, Software Engineering
+                  Principles, and Database Management.
+                </li>
               </ul>
             </div>
             <div className={styles.exp}>
-              <h5>
-                <em>Software Engineering Career Experience</em>
-              </h5>
+              <h5>Software Engineering Career Experience</h5>
               <strong> Apple, Inc</strong>, Remote
               <br />
               <span className={styles.date}>June 2021 – November 2021</span>
@@ -96,17 +131,16 @@ export default function Resume() {
                   software performance and improve system stability and
                   reliability.
                 </li>
+                <li>
+                  Hands-on experience in diagnosing and resolving software and
+                  hardware issues.
+                </li>
               </ul>
             </div>
           </article>
-        </article>
-        <article className={styles.other}>
-          <h4 className={styles.subtitle}>Other Experience</h4>
           <article className={styles.work}>
             <div className={styles.exp}>
-              <h5>
-                <em>Specialist</em>
-              </h5>
+              <h5>Specialist</h5>
               <strong>Apple, Inc</strong>, Washington, DC
               <br />
               <span className={styles.date}>April 2019 &ndash; April 2023</span>
@@ -120,11 +154,8 @@ export default function Resume() {
                   merchandising displays.
                 </li>
                 <li>
-                  Troubleshoot customer’s computer and device in-store and
-                  remotely.
-                </li>
-                <li>
-                  Setup customer device systems and install software components.
+                  Provide technical support, including system updates and
+                  software installations.
                 </li>
 
                 <li>
@@ -133,7 +164,7 @@ export default function Resume() {
                 </li>
               </ul>
             </div>
-            <h6>Management & Sales</h6>
+            <h5>Management & Sales</h5>
             <div className={styles.exp}>
               <ul className={styles.details}>
                 <li>
@@ -141,7 +172,12 @@ export default function Resume() {
                   satisfaction and retention.
                 </li>
                 <li>
-                  Train new associates in standard practices and procedures.
+                  Train new associates in standard practices and procedures,
+                  improving overall team efficiency.
+                </li>
+                <li>
+                  Assist in inventory management and ensure stock levels met
+                  customer demand.
                 </li>
                 <li>
                   Reconcile cash registers and safe, daily deposits, checks and
