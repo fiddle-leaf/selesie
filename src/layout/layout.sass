@@ -29,9 +29,6 @@ img
     width: 100%
     height: auto
 
-.title-line
-    border-bottom: calc($bit / 2) groove $secondary
-    flex: 0
 
 .title
     font: 
@@ -49,3 +46,11 @@ img
         content: url(https://64.media.tumblr.com/tumblr_lohoryRRTJ1qda978.gif)
         padding-right: 0.5rem
         transition: 0.15s
+
+article
+    .head
+        +flex(row nowrap)
+        flex: 0
+
+    .content
+        flex: 1
