@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/selesie/static/css/main.cabd056a.css",
-    "main.js": "/selesie/static/js/main.1c94ec3b.js",
-    "static/media/programmer.svg": "/selesie/static/media/programmer.52a0be6a72a612d63c26ebc465c02594.svg",
-    "static/media/portfolio.svg": "/selesie/static/media/portfolio.9caa436e2da00149cd5ef26e0fec6bc5.svg",
+    "main.css": "/selesie/static/css/main.9b4993d0.css",
+    "main.js": "/selesie/static/js/main.3684b76b.js",
+    "static/media/docs.svg": "/selesie/static/media/docs.96aaa24be0f4e9cbb61fdce3268f6fa1.svg",
+    "static/media/design_thinking.svg": "/selesie/static/media/design_thinking.892a1f5b383ba9c4e0bcb80a12297d9e.svg",
     "index.html": "/selesie/index.html",
-    "main.cabd056a.css.map": "/selesie/static/css/main.cabd056a.css.map",
-    "main.1c94ec3b.js.map": "/selesie/static/js/main.1c94ec3b.js.map"
+    "main.9b4993d0.css.map": "/selesie/static/css/main.9b4993d0.css.map",
+    "main.3684b76b.js.map": "/selesie/static/js/main.3684b76b.js.map"
   },
   "entrypoints": [
-    "static/css/main.cabd056a.css",
-    "static/js/main.1c94ec3b.js"
+    "static/css/main.9b4993d0.css",
+    "static/js/main.3684b76b.js"
   ]
 }
