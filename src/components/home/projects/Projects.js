@@ -1,11 +1,13 @@
-import { ReactComponent as DevWorkIcon } from "../../../docs.svg";
+import DevWorkIcon from "../../../docs.svg";
 import styles from "./Projects.module.sass";
 
 export default function Projects() {
   return (
     <article className={styles.projects}>
-      <h3 className={styles.title}>Projects on Github</h3>
-      <DevWorkIcon className={styles.work} />
+      <h3 className="subtitle">Projects on Github</h3>
+      <div>
+        <img src={DevWorkIcon} alt="Work UDraw Illustration" />
+      </div>
       <article className={styles.cards}>
         <div>
           <h4 className={styles.subtitle}>Vacation Planner</h4>

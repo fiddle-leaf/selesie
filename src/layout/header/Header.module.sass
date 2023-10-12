@@ -1,5 +1,7 @@
 @use '../../config/_base' as * 
 
+
+
 .header
     @include flex(row nowrap)
     align-items: center
@@ -16,17 +18,11 @@
 
     li
         flex: 0 1 auto
+        
 
     a
-        color: $secondary
-        text-decoration: none
-        font-weight: 700
-        padding: $bit/8 $bit/2
+        +cushion(2, 5)
 
-    a:hover
-        border-left: $bit/2 solid $accent-warm
-        transition: 0.15s
-        transition-timing-function: ease-in
         
 
 .title
@@ -41,8 +37,6 @@
             family: $title
             weight: 400
             size: 2rem
-        text-decoration: underline $bit/2 $accent-warm
-        text-underline-position: under
-        text-underline-offset: -4px
+        +title-line($secondary)
 
 

@@ -1,8 +1,20 @@
 $bit: 1rem
 
+=cushion($x, $y)
+    padding: calc($bit / $x) calc( $bit / $y )
+
+=star
+    content: url(https://64.media.tumblr.com/tumblr_lohoryRRTJ1qda978.gif)
+    padding-right: 0.5rem
+    
+=title-line($color)
+    border-bottom: calc($bit / 2) groove $color
+    flex: 0
+
 /** FLEX DISPLAY 
 
 @mixin flex($flow, $gap: $bit)
     display: flex
     flex-flow: $flow
     gap: $gap
+

@@ -14,3 +14,38 @@
 
     main
         flex: 1
+
+a
+    color: $accent-warm
+    text-decoration: none
+    font-weight: 700
+    //padding: $bit/8 $bit/2 
+
+    &:hover
+        color: $accent-cool
+        transition: 0.15s
+        +underlink(2px)
+img
+    width: 100%
+    height: auto
+
+.title-line
+    border-bottom: calc($bit / 2) groove $secondary
+    flex: 0
+
+.title
+    font: 
+        size: 2.5rem
+        weight: 900
+
+.subtitle
+    font:
+        size: 2rem
+        weight: 800
+    +title-line($secondary)
+
+.active
+    &:before
+        content: url(https://64.media.tumblr.com/tumblr_lohoryRRTJ1qda978.gif)
+        padding-right: 0.5rem
+        transition: 0.15s

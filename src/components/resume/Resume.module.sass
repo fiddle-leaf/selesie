@@ -17,16 +17,6 @@
     h3
         font-size: 1.5rem
 
-    a
-        color: $secondary
-        text-decoration: none
-        font-weight: 600
-        transition: 0.25s
-
-    a:hover
-        color: #500724
-        transition: 0.5s
-
 
 .title
     line-height: 110%
@@ -42,8 +32,7 @@
     font-size: 1.1rem
 
     &:before
-        content: url(https://64.media.tumblr.com/tumblr_lohoryRRTJ1qda978.gif)
-        padding-right: 0.5rem
+        +star
 
 .email
     background: $primary
@@ -68,13 +57,13 @@
     li
         margin-left: $bit
     a
-        text-decoration: underline 2px
+        +underlink(2px)
 
 .date
     font-weight: 500
 
 .other
-    border-top: calc($bit/2) solid $accent-warm
+    border-top: calc($bit/2) solid $secondary
 
 .other
     h5
