@@ -3,7 +3,7 @@ import styles from "./Projects.module.sass";
 
 export default function Projects() {
   return (
-    <article className={styles.projects}>
+    <>
       <div className="head">
         <h3 className="subtitle">Projects on Github</h3>
       </div>
@@ -41,6 +41,6 @@ export default function Projects() {
           </div>
         </article>
       </div>
-    </article>
+    </>
   );
 }

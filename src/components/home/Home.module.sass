@@ -1,6 +1,6 @@
 @use '../../config/_base' as *
 .page 
-    width: 90vw
+    width: 80vw
     margin: 0 auto
     @include flex(column nowrap, 3rem)
 
@@ -38,17 +38,17 @@
     padding-right: 0.5rem
 
 .work
-    +flex(row wrap, 3rem)
+    +flex(row wrap, calc($bit * 2))
     justify-content: space-around
 
     .info
-        flex: 3
+        flex: 1 2
 
     .projects
-        flex: 3
+        flex: 1 3
 
     article
-        +flex(column nowrap, calc($bit * 2))
+        +flex(column nowrap, $bit)
 
         *
             margin-block: 0

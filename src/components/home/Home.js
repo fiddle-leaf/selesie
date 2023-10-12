@@ -35,7 +35,9 @@ export default function Home() {
             </div>
           </div>
         </article>
-        <Projects className={styles.projects} />
+        <article className={styles.projects}>
+          <Projects />
+        </article>
       </div>
     </main>
   );

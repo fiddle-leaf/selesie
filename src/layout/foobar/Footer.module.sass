@@ -1,13 +1,17 @@
 @use '../../config/_base' as *
+@import 'https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap'
 
 .foo
     display: flex
     justify-content: center
 
 .copyright
-    color: #500724
+    color: $accent-cool
+    text-transform: uppercase
+    letter-spacing: 1px
     margin-block: 0
     padding: $bit
     font:
         size: 0.8rem
         weight: 600
+        family: 'Cousine', monospace
