@@ -8,7 +8,7 @@ export default function Header() {
         <h1>Selesie</h1>
       </div>
       <nav>
-        <ul className={styles.links}>
+        <ul className="links">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>

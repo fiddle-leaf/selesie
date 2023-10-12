@@ -8,10 +8,15 @@
     margin-top: 2rem
 
     p
-        background: $primary
-        padding: $bit
+        //background: $primary
+        //padding: $bit
         border-radius: $bit
+        color: $accent-cool
         margin-block: 0
+        font:
+            weight: 600
+            size: 1.2rem
+        //box-shadow: 0px 0px 3px $primary, 0px 0px 2px $secondary
 
    
 
@@ -37,22 +42,3 @@
     content: url(https://64.media.tumblr.com/tumblr_lohoryRRTJ1qda978.gif)
     padding-right: 0.5rem
 
-.work
-    +flex(row wrap, calc($bit * 2))
-    justify-content: space-around
-
-    .info
-        flex: 1 2
-
-    .projects
-        flex: 1 3
-
-    article
-        +flex(column nowrap, $bit)
-
-        *
-            margin-block: 0
-        h3
-            +cushion(4, 10)
-        
-    

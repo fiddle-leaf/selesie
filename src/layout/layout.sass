@@ -1,4 +1,5 @@
 @use '../config/_base' as *     //include base module
+@use '../config/media-queries'
 
 .App 
     @include flex(column nowrap)
@@ -41,11 +42,23 @@ img
         weight: 800
     +title-line($secondary)
 
+.links
+    margin-block: 0
+    list-style-type: none
+    padding-inline:  calc($bit / 2) 
+
+    a
+        font-weight: 600
+        letter-spacing: 0.5px
+        +cushion(2, 5)
+
 .active
     &:before
         content: url(https://64.media.tumblr.com/tumblr_lohoryRRTJ1qda978.gif)
         padding-right: 0.5rem
         transition: 0.15s
+        
+    
 
 article
     .head
@@ -55,3 +68,27 @@ article
     .content
         +flex(column nowrap, $bit)
         flex: 1
+
+.cards
+    .card-title
+        margin-block: calc( $bit / 4 )
+        font:
+            size: 1.3rem
+            weight: 700
+    div
+        padding: $bit
+        background: $primary
+        box-shadow: 2px 2px 3px $primary, 2px 2px 1px $secondary
+
+        border-radius: 4px
+
+    p
+        margin-block: $bit/2
+        font-size: 0.9rem
+        line-height: 120%
+    a
+        text-transform: uppercase
+            
+        font: 
+            weight: 800
+            size: 0.8rem

@@ -1,5 +1,4 @@
 import DevWorkIcon from "../../../docs.svg";
-import styles from "./Projects.module.sass";
 
 export default function Projects() {
   return (
@@ -11,9 +10,9 @@ export default function Projects() {
         <div>
           <img src={DevWorkIcon} alt="Work UDraw Illustration" />
         </div>
-        <article className={styles.cards}>
+        <article className="cards">
           <div>
-            <h4 className={styles.subtitle}>Vacation Planner</h4>
+            <h4 className="card-title">Vacation Planner</h4>
             <a
               href="https://github.com/fiddle-leaf/vacations"
               alt="Vacation Planner on Github"
@@ -26,7 +25,7 @@ export default function Projects() {
             </p>
           </div>
           <div>
-            <h4 className={styles.subtitle}>Astro Birth Day</h4>
+            <h4 className="card-title">Astro Birth Day</h4>
             <a
               href="https://github.com/fiddle-leaf/astro-birth-day"
               alt="Astro Birth Day on Github"
