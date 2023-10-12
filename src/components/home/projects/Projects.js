@@ -1,4 +1,4 @@
-import { ReactComponent as DevWorkIcon } from "../../../portfolio.svg";
+import { ReactComponent as DevWorkIcon } from "../../../docs.svg";
 import styles from "./Projects.module.sass";
 
 export default function Projects() {

@@ -1,6 +1,6 @@
 @use '../../config/_base' as *
 .page 
-    width: 75vw
+    width: 90vw
     margin: 0 auto
     @include flex(column nowrap, 3rem)
 
@@ -8,7 +8,7 @@
     margin-top: 2rem
 
     p
-        background: #f5f5f4
+        background: $primary
         padding: $bit
         border-radius: $bit
         margin-block: 0
@@ -22,12 +22,12 @@
     font:
         size: 2rem
         weight: 800
-    text-decoration: underline $bit/2 $underline
+    text-decoration: underline $bit/2 $accent-warm
     text-underline-position: under
    
 
 .about
-    @include flex(row wrap)
+    @include flex(column nowrap)
     align-items: center
 
     .dev
@@ -47,3 +47,13 @@
 .bits:before
     content: url(https://64.media.tumblr.com/tumblr_lohoryRRTJ1qda978.gif)
     padding-right: 0.5rem
+
+.work
+    +flex(row wrap, 3rem)
+    justify-content: space-around
+
+    .info
+        flex: 3
+
+    .projects
+        flex: 3

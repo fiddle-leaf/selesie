@@ -6,8 +6,8 @@ export default function Resume() {
         <h2 className={styles.title}>Shanon Palomino Salinas</h2>
         <div className={styles.blurb}>
           <p className={styles.intro}>
-            Dedicated and highly motivated Software Engineer with a passion for
-            Web Design, User Experience, and solving complex software issues.
+            Software Engineer with a passion for Web Design, User Experience,
+            and solving complex software issues.
           </p>
           <p className={styles.contact}>
             <mark className={styles.email}>
@@ -64,8 +64,7 @@ export default function Resume() {
               <ul>
                 <li>
                   A responsive personal website to showcase Web Design skills
-                  and projects utilizing React.js to create an interactive and
-                  visually appealing portfolio.
+                  and projects utilizing React.js.
                 </li>
               </ul>
             </li>
@@ -74,7 +73,7 @@ export default function Resume() {
 
               <ul>
                 <li>
-                  React.js vacation planner website implementing user
+                  A React.js vacation planning website implementing user
                   authentication and real-time updates with MongoDB, Node.js,
                   and Express server.
                 </li>
@@ -85,8 +84,8 @@ export default function Resume() {
 
               <ul>
                 <li>
-                  Redux Project utilizing React.js gets forecast and moon data
-                  using the Weather API and fetch requests.
+                  Redux Project gets forecast and moon data utilizing Weather
+                  API.
                 </li>
               </ul>
             </li>
