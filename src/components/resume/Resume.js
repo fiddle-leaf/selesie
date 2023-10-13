@@ -17,21 +17,21 @@ export default function Resume() {
             <span className={styles.location}>Rockville, MD.</span>
           </p>
         </div>
-        <div>
-          <h3>Work in Progress</h3>
-          <div className={styles.ongoing}>
-            <ul>
-              <li>
-                <a href="https://grow.google/" alt="Grow with Google website">
-                  Grow with Google
-                </a>
-                <br />
-                <strong>UX Designer Certificate</strong>
-                <br />
-                <span className={styles.date}>October 2023 — March 2024</span>
-              </li>
-            </ul>
+        <div className={styles.ongoing}>
+          <div>
+            <h3>Work in Progress</h3>
           </div>
+          <ul>
+            <li>
+              <a href="https://grow.google/" alt="Grow with Google website">
+                Grow with Google
+              </a>
+              <br />
+              <strong>UX Designer Certificate</strong>
+              <br />
+              <span className={styles.date}>October 2023 — March 2024</span>
+            </li>
+          </ul>
         </div>
         <article className="current">
           <div className={styles.skills}>
@@ -97,7 +97,9 @@ export default function Resume() {
             </ul>
           </div>
         </article>
-        <article className={styles.other}>
+      </article>
+      <article className={styles.other}>
+        <div className={styles.content}>
           <h3>Professional Experience</h3>
           <article className={styles.work}>
             <div className={styles.exp}>
@@ -194,7 +196,7 @@ export default function Resume() {
               </ul>
             </div>
           </article>
-        </article>
+        </div>
       </article>
     </main>
   );

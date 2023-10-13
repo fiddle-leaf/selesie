@@ -54,10 +54,12 @@ a
             weight: 600
 
 .active
-    &:before
-        content: url(https://64.media.tumblr.com/tumblr_lohoryRRTJ1qda978.gif)
-        padding-right: 0.5rem
-        transition: 0.15s
+    +underlink(2px)
+    color: $accent-cool
+    transition: 0.15s
+
+    &::before
+        +star
 
 .desc
     color: $accent-cool

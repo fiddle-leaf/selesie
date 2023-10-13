@@ -8,6 +8,7 @@
     height: 100vh
 
 .body
+    flex: 0
     @include flex(column nowrap)
     margin-block-start: 3rem
     max-width: 80vw
@@ -22,9 +23,11 @@
 h3,
 .subtitle
     font-size: 1.5rem
+
+
 .subtitle
-    padding-left: $bit
-    border-left: calc($bit / 2) solid $secondary
+    +title-line($secondary)
+    +cushion(4, 8)
 
 
 .title
@@ -53,16 +56,20 @@ h3,
     
 
 .ongoing
-    +flex(row nowrap)
-    ul
+    +flex(column nowrap)
+    h3
+        margin-block: calc($bit / 4)
+    
+    ul  
+        font-size: 1.1rem
         margin-block: 0
-        background: $primary
-        padding: calc($bit/2) $bit
-        border-radius: 4px
-        +shadow($secondary)
+        padding-inline: 0
+        list-style: none
+        line-height: 175%
 
         li
-            margin-left: $bit
+            &::before
+                +star
         a
             +underlink(2px)
 
@@ -70,15 +77,25 @@ h3,
     font-weight: 500
 
 .other
-    border-top: calc($bit/2) solid $secondary
+    width: 100%
+    line-height: 130%
+    background: $primary
 
-.other
+    .content
+        padding: $bit
+        h3
+            margin-block: $bit
     h5
         font:
             size: 1.05rem
             weight: 600
             style: italic
-        margin-block: calc($bit/3)
+        margin-block: calc($bit/ 3)
+        border-left: calc($bit / 2) solid $secondary
+        padding-left: $bit
+
+    ul
+        line-height: 150%
 
 .work
-    +flex(column nowrap, calc($bit * 2))
+    +flex(column nowrap, $bit)
