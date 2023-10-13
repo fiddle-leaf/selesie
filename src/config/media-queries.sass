@@ -1,5 +1,7 @@
 @use '_base' as *
 
+.current
+    +flex(column nowrap)
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)
@@ -9,9 +11,6 @@
 
     .work
         +flex(column nowrap, $bit)
-
-    .current
-        +flex(column nowrap)
 
     .cards
         +flex(column nowrap, calc($bit * 1.5))
