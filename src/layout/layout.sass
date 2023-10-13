@@ -27,7 +27,7 @@ a
         transition: 0.15s
         +underlink(2px)
 img
-    width: 100%
+    max-width: 80%
     height: auto
 
 
@@ -71,7 +71,6 @@ img
 
 .content
     +flex(column nowrap, $bit)
-    flex: 1
 
 .cards
     .card-title
@@ -100,3 +99,6 @@ img
             weight: 900
             size: 0.8rem
             family: $text
+
+.current
+    padding-block-end: $bit
