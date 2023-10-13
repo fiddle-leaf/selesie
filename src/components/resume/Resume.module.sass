@@ -8,14 +8,22 @@
     height: 100vh
 
 .body
-    @include flex(column nowrap)
+    @include flex(column nowrap, 2rem)
     margin-block-start: 3rem
     max-width: 80vw
     padding: $bit
     line-height: 150%
 
-    h3
-        font-size: 1.5rem
+    ul
+        margin-block: 0
+
+
+h3,
+.subtitle
+    font-size: 1.5rem
+.subtitle
+    padding-left: $bit
+    border-left: calc($bit / 2) solid $secondary
 
 
 .title
@@ -25,39 +33,37 @@
         size: 2.5rem
         weight: 800
 
+
 .blurb 
-    @include flex(column nowrap, calc($bit/3))
+    +flex(column nowrap, calc($bit/3))
 .intro
     margin-block: 0
     font-size: 1.1rem
 
-    &:before
-        +star
+.contact
+    line-height: 175%
 
 .email
     background: $primary
-    padding-inline: calc($bit/4)
-
-.current
-    +flex(row wrap, 2rem)
-
-    div
-        flex: 2 0
-
-    div.skills
-        flex: 3
+    +cushion(5, 4)
+.location
+    font-weight: 500
+    
     
 
 .ongoing
-    margin-block: 0
-    background: $primary
-    padding: calc($bit/2) $bit
-    border-radius: 4px
+    +flex(row nowrap)
+    ul
+        margin-block: 0
+        background: $primary
+        padding: calc($bit/2) $bit
+        border-radius: 4px
+        +shadow($secondary)
 
-    li
-        margin-left: $bit
-    a
-        +underlink(2px)
+        li
+            margin-left: $bit
+        a
+            +underlink(2px)
 
 .date
     font-weight: 500
@@ -72,3 +78,6 @@
             weight: 600
             style: italic
         margin-block: calc($bit/3)
+
+.work
+    +flex(column nowrap, calc($bit * 2))

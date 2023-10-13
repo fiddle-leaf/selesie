@@ -5,7 +5,7 @@ export default function Resume() {
       <article className={styles.body}>
         <h2 className={styles.title}>Shanon Palomino Salinas</h2>
         <div className={styles.blurb}>
-          <p className={styles.intro}>
+          <p className="desc">
             Software Engineer with a passion for Web Design, User Experience,
             and solving complex software issues.
           </p>
@@ -14,13 +14,13 @@ export default function Resume() {
               <a href="mailto:shanonps@icloud.com">shanonps@icloud.com</a>
             </mark>
             <br />
-            Rockville, MD.
+            <span className={styles.location}>Rockville, MD.</span>
           </p>
         </div>
-        <article className={styles.current}>
-          <div>
-            <h3>Work in Progress</h3>
-            <ul className={styles.ongoing}>
+        <div>
+          <h3>Work in Progress</h3>
+          <div className={styles.ongoing}>
+            <ul>
               <li>
                 <a href="https://grow.google/" alt="Grow with Google website">
                   Grow with Google
@@ -32,8 +32,12 @@ export default function Resume() {
               </li>
             </ul>
           </div>
+        </div>
+        <article className="current">
           <div className={styles.skills}>
-            <h3>Skills</h3>
+            <div className="head">
+              <h3 className={styles.subtitle}>Skills</h3>
+            </div>
             <ul>
               <li>
                 <strong>Web Development</strong> &ndash; HTML, CSS, JavaScript,
@@ -54,42 +58,44 @@ export default function Resume() {
               </li>
             </ul>
           </div>
-        </article>
-        <article className={styles.projects}>
-          <h3 className={styles.subtitle}>Projects</h3>
-          <ul>
-            <li>
-              <strong>Selesie: Personal Portfolio Website</strong>
+          <div>
+            <div className="head">
+              <h3 className={styles.subtitle}>Projects</h3>
+            </div>
+            <ul>
+              <li>
+                <strong>Selesie: Personal Portfolio Website</strong>
 
-              <ul>
-                <li>
-                  A responsive personal website to showcase Web Design skills
-                  and projects utilizing React.js.
-                </li>
-              </ul>
-            </li>
-            <li>
-              <strong>Plan_It</strong>
+                <ul>
+                  <li>
+                    A responsive personal website to showcase Web Design skills
+                    and projects utilizing React.js.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Plan_It</strong>
 
-              <ul>
-                <li>
-                  A React.js vacation planning website implementing user
-                  authentication and real-time updates with MongoDB, Node.js,
-                  and Express server.
-                </li>
-              </ul>
-            </li>
-            <li>
-              <strong>Astro Birth Day </strong>
+                <ul>
+                  <li>
+                    A React.js vacation planning website implementing user
+                    authentication and real-time updates with MongoDB, Node.js,
+                    and Express server.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Astro Birth Day </strong>
 
-              <ul>
-                <li>
-                  Redux Project gets forecast and moon data utilizing Weather
-                  API.
-                </li>
-              </ul>
-            </li>
-          </ul>
+                <ul>
+                  <li>
+                    Redux Project gets forecast and moon data utilizing Weather
+                    API.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </article>
         <article className={styles.other}>
           <h3>Professional Experience</h3>
@@ -136,8 +142,6 @@ export default function Resume() {
                 </li>
               </ul>
             </div>
-          </article>
-          <article className={styles.work}>
             <div className={styles.exp}>
               <h5>Specialist</h5>
               <strong>Apple, Inc</strong>, Washington, DC
@@ -163,8 +167,9 @@ export default function Resume() {
                 </li>
               </ul>
             </div>
-            <h5>Management & Sales</h5>
             <div className={styles.exp}>
+              <h5>Management & Sales</h5>
+
               <ul className={styles.details}>
                 <li>
                   Evaluate and resolve customer complaints and assure customer

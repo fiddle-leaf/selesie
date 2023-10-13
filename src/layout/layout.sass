@@ -37,6 +37,7 @@ img
         weight: 900
 
 .subtitle
+    +cushion(3, 3)
     font:
         size: 2rem
         weight: 800
@@ -50,25 +51,27 @@ img
     a
         font:
             weight: 600
-            size: 1.1rem
-        letter-spacing: 0.5px
 
 .active
     &:before
         content: url(https://64.media.tumblr.com/tumblr_lohoryRRTJ1qda978.gif)
         padding-right: 0.5rem
         transition: 0.15s
-        
-    
 
-article
-    .head
-        +flex(row nowrap)
-        flex: 0
+.desc
+    color: $accent-cool
+    margin-block: 0
+    font:
+        weight: 600
+        size: 1.2rem    
 
-    .content
-        +flex(column nowrap, $bit)
-        flex: 1
+.head
+    +flex(row nowrap)
+    flex: 0
+
+.content
+    +flex(column nowrap, $bit)
+    flex: 1
 
 .cards
     .card-title
@@ -79,7 +82,7 @@ article
     div
         padding: $bit
         background: $primary
-        box-shadow: 0px 0px calc($bit / 7) $secondary
+        +shadow($secondary)
 
         border-radius: 4px
 

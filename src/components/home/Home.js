@@ -23,16 +23,9 @@ export default function Home() {
                 <img src={DevIcon} alt="UDraw Illustration - Design Thinking" />
               </div>
               <div className="bits">
-                <h4 className={styles.bits}>
-                  Peruana in Rockville, Maryland, USA
-                </h4>
-                <h4 className={styles.bits}>
-                  Plants, Photography, and Mindfulness
-                </h4>
-                <h4 className={styles.bits}>
-                  Color and Personalization in UI design
-                </h4>
-                <h4 className={styles.bits}>Styling since 2008</h4>
+                <h4 className={styles.bits}>Peruana in Rockville, Maryland.</h4>
+                <h4 className={styles.bits}>Plant Mommy & Photographer.</h4>
+                <h4 className={styles.bits}>Styling since 2008.</h4>
               </div>
             </div>
           </div>

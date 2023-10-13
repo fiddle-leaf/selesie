@@ -7,9 +7,14 @@
         line-height: 150%
         
 
-    .work,
-    .cards
+    .work
         +flex(column nowrap, $bit)
+
+    .current
+        +flex(column nowrap)
+
+    .cards
+        +flex(column nowrap, calc($bit * 1.5))
 
     header
         +flex(column nowrap, calc($bit / 2))
@@ -38,5 +43,14 @@
         @include flex(row wrap)
         div
             flex: 1 1
+
+    .current
+        +flex(row wrap, 2rem)
+
+        div
+            flex: 2 0
+
+        div.skills
+            flex: 3
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) 
