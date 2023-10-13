@@ -1,13 +1,13 @@
 @use '_base' as *
 
-.current
+.current,
+.gallery
     +flex(column nowrap)
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)
     .desc
         line-height: 150%
-        
 
     .work
         +flex(column nowrap, $bit)
@@ -53,6 +53,7 @@
 
         .projects
             flex: 5
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
     header
@@ -85,6 +86,16 @@
 
         div.skills
             flex: 5
+
+    .gallery
+        +flex(row nowrap)
+        align-items: flex-start
+
+        div
+            flex: 1
+
+        figure
+            flex: 3
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) 

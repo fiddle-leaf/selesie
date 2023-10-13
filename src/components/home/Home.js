@@ -19,7 +19,7 @@ export default function Home() {
           </div>
           <div className="content">
             <div className={styles.about}>
-              <div>
+              <div className="icon">
                 <img src={DevIcon} alt="UDraw Illustration - Design Thinking" />
               </div>
               <div className="bits">

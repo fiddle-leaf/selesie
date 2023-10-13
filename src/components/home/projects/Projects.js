@@ -7,7 +7,7 @@ export default function Projects() {
         <h3 className="subtitle">Projects on Github</h3>
       </div>
       <div className="content">
-        <div>
+        <div className="icon">
           <img src={DevWorkIcon} alt="Work UDraw Illustration" />
         </div>
         <article className="cards">
