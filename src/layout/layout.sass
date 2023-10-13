@@ -48,9 +48,10 @@ img
     padding-inline:  calc($bit / 2) 
 
     a
-        font-weight: 600
+        font:
+            weight: 600
+            size: 1.1rem
         letter-spacing: 0.5px
-        +cushion(2, 5)
 
 .active
     &:before
@@ -78,17 +79,21 @@ article
     div
         padding: $bit
         background: $primary
-        box-shadow: 2px 2px 3px $primary, 2px 2px 1px $secondary
+        box-shadow: 0px 0px calc($bit / 7) $secondary
 
         border-radius: 4px
 
     p
         margin-block: $bit/2
-        font-size: 0.9rem
-        line-height: 120%
-    a
+        line-height: 130%
+
+    .source
+        background: $primary
+        padding: 0
+        border: 0
         text-transform: uppercase
-            
+        letter-spacing: calc( $bit / 14)
         font: 
-            weight: 800
+            weight: 900
             size: 0.8rem
+            family: $text

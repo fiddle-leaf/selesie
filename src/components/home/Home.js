@@ -24,18 +24,15 @@ export default function Home() {
               </div>
               <div className="bits">
                 <h4 className={styles.bits}>
-                  Peruana, Plant Lover, and Photographer
+                  Peruana in Rockville, Maryland, USA
                 </h4>
-                <h4 className={styles.bits}>Rockville, Maryland, USA</h4>
+                <h4 className={styles.bits}>
+                  Plants, Photography, and Mindfulness
+                </h4>
+                <h4 className={styles.bits}>
+                  Color and Personalization in UI design
+                </h4>
                 <h4 className={styles.bits}>Styling since 2008</h4>
-
-                <div>
-                  <p>
-                    My love for code originated on MySpace, where I made layouts
-                    for kids at school. My goal is to bring color and
-                    personalization back to UI design.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
