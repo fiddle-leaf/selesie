@@ -1,0 +1,199 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background: #fef2e4;
+}
+
+.page {
+  background: rgb(57, 33, 94);
+  background: linear-gradient(180deg, rgb(57, 33, 94) 0%, rgb(57, 33, 94) 25%, rgb(226, 190, 228) 70%, rgb(254, 242, 228) 100%);
+}
+
+#links > li {
+  /*background: $accent
+  * border: 2px solid $primary */
+}
+#links > li a {
+  color: #fef2e4;
+}
+#links > li :hover {
+  color: #e2bee4;
+}
+
+header {
+  background: #39215e;
+  color: #e2bee4;
+}
+header p {
+  color: #fef2e4;
+}
+
+footer.foo {
+  color: #000;
+  text-align: center;
+}
+
+.heading h2::before {
+  color: #39215e;
+}
+
+.card {
+  background: #fef2e4;
+  box-shadow: 2px 2px #39215e;
+  border: 0.1rem solid #39215e;
+  border-radius: 0.25rem;
+}
+.card div {
+  background: #e2bee4;
+  border-radius: 0.25rem 0.25rem 0 0;
+  border-bottom: 0.1rem solid #39215e;
+}
+
+body {
+  line-height: 125%;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Azeret Mono", monospace;
+}
+body h1 {
+  font-weight: 900;
+}
+body h2 {
+  font-weight: 800;
+}
+body h3 {
+  font-weight: 700;
+}
+body strong, body b {
+  font-weight: 800;
+}
+body nav > li {
+  font-weight: 600;
+}
+
+#links {
+  font-family: "Azeret Mono", monospace;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+#links a {
+  text-decoration: none;
+}
+
+#intro {
+  font-size: 0.9rem;
+}
+
+.title {
+  letter-spacing: -0.25rem;
+  font-size: 3rem;
+}
+
+.heading h2 {
+  text-transform: uppercase;
+  margin-block: 0;
+  font-family: "Azeret Mono", monospace;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.foo > p {
+  letter-spacing: 0.01rem;
+  text-transform: uppercase;
+  font-family: "Azeret Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer.foo {
+  padding: 0.5rem;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0;
+  padding: 2rem 1rem;
+  align-items: flex-start;
+}
+header div {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0;
+  align-content: flex-end;
+  flex: 4;
+  padding: 0.5rem;
+}
+header div p {
+  margin-top: 1.5rem;
+}
+header nav {
+  flex: 3;
+}
+
+.proj-items {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-items: space-evenly;
+  border-radius: 0 0 0.75rem 0.75rem;
+  padding: 1rem 1.5rem;
+}
+.proj-items div {
+  flex: 1;
+}
+.proj-items div h3 {
+  padding: 0.5rem;
+}
+.proj-items figure {
+  padding: 1rem;
+}
+
+#links {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+#links li {
+  padding: 0.25rem 1rem;
+  text-decoration: 0.5rem underline;
+}
+
+.page {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0;
+  min-height: 100vh;
+}
+.page main.content {
+  flex: 1;
+}
+
+.heading {
+  padding: 1rem 0.5rem;
+}
+.heading h2::before {
+  content: "⯍";
+  max-width: 0.5rem;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+/*# sourceMappingURL=bundle.css.map */

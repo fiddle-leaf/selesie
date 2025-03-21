@@ -1,0 +1,20 @@
+---
+title: Selesie
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bundle.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="page">
+        {% include 'head' %}
+        <main class="content">
+            {{ content }}
+        </main>
+        {%  include 'foo' %}
+    </div>
+</body>
+</html>

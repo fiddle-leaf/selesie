@@ -1,0 +1,81 @@
+$cushion: calc(1rem/2)
+
+=reset-list
+    margin: 0
+    padding: 0
+    list-style: none
+
+=grid($flow, $gap, $wrap: wrap)
+    display: flex
+    flex-flow: $flow $wrap
+    gap: $gap
+    
+
+*
+    +reset-list
+
+footer.foo
+    padding: $cushion
+
+header
+    +grid($flow: row, $wrap: nowrap, $gap: 0)
+    padding: 2rem 1rem 
+    align-items: flex-start
+
+    div
+        +grid($flow: column, $wrap: nowrap, $gap: 0)
+        align-content: flex-end
+        flex: 4
+        padding: $cushion
+
+        p
+            margin-top: 1.5rem
+                
+    nav
+        flex: 3
+
+.proj-items
+    +grid($flow: row, $gap: 1rem)
+    justify-items: space-evenly
+    border-radius: 0 0 0.75rem 0.75rem
+    padding: 1rem 1.5rem
+
+    div
+        flex: 1
+
+        h3
+            padding: $cushion
+    
+    figure
+        padding: 1rem
+
+
+#links
+    +grid($flow: row, $gap: 1rem)
+    list-style-type: none
+    justify-content:  space-evenly
+
+    li
+        padding: calc($cushion/2) 1rem
+        text-decoration: $cushion underline 
+
+.page
+    +grid($flow: column, $gap: 0)
+    min-height: 100vh
+
+    main.content 
+        flex: 1
+
+
+.page
+    //padding: 1rem
+
+.heading
+    padding: 1rem $cushion
+
+    h2::before 
+        content: "⯍"
+        max-width: 0.5rem
+        font-size: 1.25rem
+        margin-right: 1rem
+  

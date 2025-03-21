@@ -1,0 +1,17 @@
+<header>
+    <div>
+        <h1 class="title">{{ title }}</h1>
+        <p id="intro">Hi! I am Shanon. Welcome to my portfolio as a web designer focused on color accessibility. </p>
+    </div>
+            <!-- With the dashes at the start and end of the tags, the <LI>s will end up all on one line. 
+                To keep each <LI> on it's own line, just add dashes at the end of the tags. -->
+    <nav>
+        <ul id="links">
+            {% for link in linkList %}
+                <li>
+                    <a href="{{ link["url"] }}" \>{{ link["title"] }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
