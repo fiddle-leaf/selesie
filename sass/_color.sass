@@ -16,6 +16,9 @@ body
 
 main.content
     background: linear-gradient(180deg,rgba(57,33,94,1) 10%, rgba(226,190,228,1) 50%, rgba(254,242,228,1) 100%)
+
+    .photos
+        background: $accent
     
 
 #links>li
@@ -36,6 +39,7 @@ header
         color: $primary
 
 footer.foo
+    background: $primary
     color: $accent-2
     text-align: center
 
@@ -43,8 +47,8 @@ footer.foo
     h2
         //background: $secondary
         color: $primary
-        text-shadow: 1px 2px 2px $secondary
-        
+        text-shadow: -0.01rem -0.01rem $secondary, 0.1rem 0.1rem $secondary, 0 0 0.2rem $accent
+    
     
     h2::before
         color: $accent

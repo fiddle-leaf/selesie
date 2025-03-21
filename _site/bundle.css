@@ -12,6 +12,9 @@ body {
 main.content {
   background: linear-gradient(180deg, rgb(57, 33, 94) 10%, rgb(226, 190, 228) 50%, rgb(254, 242, 228) 100%);
 }
+main.content .photos {
+  background: #e2bee4;
+}
 
 #links > li {
   /*background: $accent
@@ -33,13 +36,14 @@ header p {
 }
 
 footer.foo {
+  background: #fef2e4;
   color: #000;
   text-align: center;
 }
 
 .heading h2 {
   color: #fef2e4;
-  text-shadow: 1px 2px 2px #39215e;
+  text-shadow: -0.01rem -0.01rem #39215e, 0.1rem 0.1rem #39215e, 0 0 0.2rem #e2bee4;
 }
 .heading h2::before {
   color: #e2bee4;
@@ -72,12 +76,15 @@ body h6 {
   font-family: "Azeret Mono", monospace;
 }
 body h1 {
+  font-size: 3rem;
   font-weight: 900;
 }
 body h2 {
+  font-size: 1.75rem;
   font-weight: 800;
 }
 body h3 {
+  font-size: 1.1rem;
   font-weight: 700;
 }
 body strong, body b {
@@ -102,13 +109,12 @@ body nav > li {
 
 .title {
   letter-spacing: -0.25rem;
-  font-size: 3rem;
 }
 
 .heading h2 {
-  text-transform: uppercase;
+  letter-spacing: -0.08rem;
+  text-transform: sentence-case;
   margin-block: 0;
-  font-size: 1.25rem;
   font-weight: 800;
 }
 
@@ -192,6 +198,10 @@ header nav {
   flex: 1;
 }
 
+.proj {
+  padding-block-end: 1rem;
+}
+
 .heading {
   display: flex;
   flex-flow: row wrap;
@@ -206,7 +216,8 @@ header nav {
   content: "⯍";
   max-width: 0.5rem;
   font-size: 1.25rem;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
+  float: center;
 }
 
 /*# sourceMappingURL=bundle.css.map */
