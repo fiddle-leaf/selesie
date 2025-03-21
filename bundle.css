@@ -34,8 +34,12 @@ footer.foo {
   text-align: center;
 }
 
+.heading h2 {
+  background: #39215e;
+  color: #fef2e4;
+}
 .heading h2::before {
-  color: #39215e;
+  color: #e2bee4;
 }
 
 .card {
@@ -101,9 +105,8 @@ body nav > li {
 .heading h2 {
   text-transform: uppercase;
   margin-block: 0;
-  font-family: "Azeret Mono", monospace;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .foo > p {
@@ -152,7 +155,7 @@ header nav {
   gap: 1rem;
   justify-items: space-evenly;
   border-radius: 0 0 0.75rem 0.75rem;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 .proj-items div {
   flex: 1;
@@ -187,13 +190,20 @@ header nav {
 }
 
 .heading {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0;
   padding: 1rem 0.5rem;
+}
+.heading h2 {
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.1rem;
 }
 .heading h2::before {
   content: "⯍";
   max-width: 0.5rem;
   font-size: 1.25rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=bundle.css.map */
