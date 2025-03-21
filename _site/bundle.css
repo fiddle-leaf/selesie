@@ -7,7 +7,10 @@ body {
 
 .page {
   background: rgb(57, 33, 94);
-  background: linear-gradient(180deg, rgb(57, 33, 94) 0%, rgb(57, 33, 94) 25%, rgb(226, 190, 228) 70%, rgb(254, 242, 228) 100%);
+}
+
+main.content {
+  background: linear-gradient(180deg, rgb(57, 33, 94) 10%, rgb(226, 190, 228) 50%, rgb(254, 242, 228) 100%);
 }
 
 #links > li {
@@ -35,8 +38,8 @@ footer.foo {
 }
 
 .heading h2 {
-  background: #39215e;
   color: #fef2e4;
+  text-shadow: 1px 2px 2px #39215e;
 }
 .heading h2::before {
   color: #e2bee4;
@@ -106,7 +109,7 @@ body nav > li {
   text-transform: uppercase;
   margin-block: 0;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .foo > p {

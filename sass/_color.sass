@@ -12,9 +12,10 @@ body
 
 .page
     background: rgb(57,33,94)
-    background: linear-gradient(180deg, rgba(57,33,94,1) 0%,rgba(57,33,94,1) 25%, rgba(226,190,228,1) 70%, rgba(254,242,228,1) 100%)
+    
 
 main.content
+    background: linear-gradient(180deg,rgba(57,33,94,1) 10%, rgba(226,190,228,1) 50%, rgba(254,242,228,1) 100%)
     
 
 #links>li
@@ -40,8 +41,10 @@ footer.foo
 
 .heading
     h2
-        background: $secondary
+        //background: $secondary
         color: $primary
+        text-shadow: 1px 2px 2px $secondary
+        
     
     h2::before
         color: $accent
