@@ -1,0 +1,12 @@
+<nav>
+    <ul id="links">
+        {% for link in linkList %}
+            <li>
+                <a href="{{ link["url"] }}" \>{{ link["title"] }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
+<header>
+    <h1 class="page-title">{{ title }}</h1>
+</header>

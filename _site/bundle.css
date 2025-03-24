@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+.page {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0;
+  align-items: flex-start;
+  background: #f7f2ff;
+  min-height: 100vh;
+  width: auto;
+}
+
+main.content {
+  flex: 1;
+  align-self: center;
+  background: blue;
+  width: 80vw;
+  height: auto;
+}
+
+.head,
+.foo {
+  width: 100%;
+}
+
+#links {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-block: 1rem;
+}
+#links li {
+  text-align: center;
+  flex: 1;
+  font-size: 1.2rem;
+  font-family: "Azeret Mono", monospace;
+  font-weight: 800;
+}
+#links li a {
+  color: #3d2c9d;
+  text-decoration: 0.5rem underline #40807e;
+}
+#links li a:hover {
+  text-decoration: 0.5rem underline #18161d;
+}
+
+body {
+  margin: 0;
+  background: #f7f2ff;
+  color: #18161d;
+  font-size: 14px;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Azeret Mono", monospace;
+}
+
+/*# sourceMappingURL=bundle.css.map */

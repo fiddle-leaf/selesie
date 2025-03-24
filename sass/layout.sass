@@ -1,0 +1,40 @@
+@use 'defaults' as *
+
+.page
+    +grid($flow: column, $wrap: nowrap)
+    align-items: flex-start
+    background: $primary  
+    min-height: 100vh
+    width: auto
+    
+main.content
+    flex: 1
+    align-self: center
+    background: blue
+    width: 80vw
+    height: auto
+
+.head,
+.foo
+    width: 100%
+
+#links
+    +grid($wrap: nowrap, $gap: $cushion)
+    justify-content: space-around
+    list-style-type: none
+    padding-block: $cushion
+
+    li
+        text-align: center
+        flex: 1
+        font:
+            size: 1.2rem
+            family: $titles
+            weight: 800
+
+        a
+            color: $accent
+            text-decoration: $bit underline $accent-2
+
+        a:hover
+            text-decoration: $bit underline $secondary

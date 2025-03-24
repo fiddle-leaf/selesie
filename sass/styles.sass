@@ -1,0 +1,23 @@
+@use 'defaults' as *
+@use 'layout'
+
+body 
+    margin: 0
+    background: $primary
+    color: $secondary
+    font:
+        size: 14px
+        family: $text
+        optical-sizing: auto
+        style: normal
+
+    *
+        +reset-list
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+       font-family: $titles 

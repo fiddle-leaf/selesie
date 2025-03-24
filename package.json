@@ -7,7 +7,7 @@
     "build": "npx eleventy",
     "serve": "npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy",
-    "watch:sass": "npx sass sass/base.sass:bundle.css --watch"
+    "watch:sass": "npx sass sass/styles.sass:bundle.css --watch"
   },
   "keywords": [],
   "author": "",
