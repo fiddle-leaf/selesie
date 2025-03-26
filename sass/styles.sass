@@ -19,5 +19,26 @@ body
     h3,
     h4,
     h5,
-    h6
+    h6,
+    .foo
        font-family: $titles 
+
+.foo,
+#links>li
+    text-align: center
+
+#links>li
+    font:
+        size: 1.2rem
+        family: $titles
+        weight: 800
+
+    a
+        color: $accent
+        text-decoration: $bit underline $accent-2
+
+    a:hover
+        text-decoration: $bit underline $secondary    
+
+.foo
+    font-weight: 600

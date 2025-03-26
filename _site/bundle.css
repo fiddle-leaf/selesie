@@ -22,6 +22,11 @@ main.content {
   width: 100%;
 }
 
+.foo {
+  padding: 1rem;
+  font-size: 0.75rem;
+}
+
 #links {
   display: flex;
   flex-flow: row nowrap;
@@ -31,18 +36,7 @@ main.content {
   padding-block: 1rem;
 }
 #links li {
-  text-align: center;
   flex: 1;
-  font-size: 1.2rem;
-  font-family: "Azeret Mono", monospace;
-  font-weight: 800;
-}
-#links li a {
-  color: #3d2c9d;
-  text-decoration: 0.5rem underline #40807e;
-}
-#links li a:hover {
-  text-decoration: 0.5rem underline #18161d;
 }
 
 body {
@@ -64,8 +58,31 @@ body h2,
 body h3,
 body h4,
 body h5,
-body h6 {
+body h6,
+body .foo {
   font-family: "Azeret Mono", monospace;
+}
+
+.foo,
+#links > li {
+  text-align: center;
+}
+
+#links > li {
+  font-size: 1.2rem;
+  font-family: "Azeret Mono", monospace;
+  font-weight: 800;
+}
+#links > li a {
+  color: #3d2c9d;
+  text-decoration: 0.5rem underline #40807e;
+}
+#links > li a:hover {
+  text-decoration: 0.5rem underline #18161d;
+}
+
+.foo {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=bundle.css.map */

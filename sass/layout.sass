@@ -18,6 +18,10 @@ main.content
 .foo
     width: 100%
 
+.foo
+    padding: $cushion
+    font-size: calc( $cushion * 0.75 )
+
 #links
     +grid($wrap: nowrap, $gap: $cushion)
     justify-content: space-around
@@ -25,16 +29,4 @@ main.content
     padding-block: $cushion
 
     li
-        text-align: center
         flex: 1
-        font:
-            size: 1.2rem
-            family: $titles
-            weight: 800
-
-        a
-            color: $accent
-            text-decoration: $bit underline $accent-2
-
-        a:hover
-            text-decoration: $bit underline $secondary
