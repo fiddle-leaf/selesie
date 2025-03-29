@@ -21,7 +21,9 @@
     width: auto
     
 main.content
+    //padding: calc( $cushion/2 )
     flex: 1
+    +grid($flow: column)
     //width: 80vw
     height: auto
 
@@ -40,9 +42,18 @@ main.content
             flex: 0
 
 .foo
+    +grid($flow: column)
+    justify-content: flex-start
     font-size: calc( $cushion * 0.75 )
 
+    div
+        margin: $cushion
+
+        p
+            padding-block: calc( $cushion/2 )
+
     footer
+        align-self: center
         padding: $cushion
 
 .links

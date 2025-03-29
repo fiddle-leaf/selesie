@@ -14,6 +14,15 @@ body
     *
         +reset-list
 
+    a
+        text-decoration: 2px underline $accent-2
+
+    a:visited
+        color: $accent-3
+
+    a:hover
+        color: #16171f //indigo-90
+
     h1,
     h2,
     h3,
@@ -31,9 +40,15 @@ body
             weight: 900
 
     h2
+        text-shadow: 1px 2px 2px $primary
         font:
             size: 3rem
             weight: 700rem
+
+    h4
+        font:
+            size: 1.2rem
+            weight: 500
 
     strong, 
     bold
@@ -51,11 +66,9 @@ main.content
     background: rgb(61,44,157)
     background: linear-gradient(180deg, rgba(61,44,157,1) 5%, rgba(244,178,255,1) 60%, rgba(244,178,255,1) 75%, rgba(247,242,255,1) 95%)
 
-.foo,
-.links>li
-    text-align: center
 
 .links>li
+    text-align: center
     font:
         size: 1.2rem
         family: $titles
@@ -66,7 +79,9 @@ main.content
         text-decoration: $bit underline $accent-2
 
     a:hover
-        text-decoration: $bit underline $accent   
+        transition: text-decoration 500ms 200ms
+        text-decoration: $bit underline $accent-3  
+
 
 .foo
     color: $primary

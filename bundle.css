@@ -19,6 +19,9 @@
 
 main.content {
   flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0;
   height: auto;
 }
 
@@ -39,9 +42,20 @@ main.content {
 }
 
 .foo {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0;
+  justify-content: flex-start;
   font-size: 0.75rem;
 }
+.foo div {
+  margin: 1rem;
+}
+.foo div p {
+  padding-block: 0.5rem;
+}
 .foo footer {
+  align-self: center;
   padding: 1rem;
 }
 
@@ -71,6 +85,15 @@ body * {
   margin: 0;
   box-sizing: border-box;
 }
+body a {
+  text-decoration: 2px underline #00a398;
+}
+body a:visited {
+  color: #261f5b;
+}
+body a:hover {
+  color: #16171f;
+}
 body h1,
 body h2,
 body h3,
@@ -87,8 +110,13 @@ body h1 {
   font-weight: 900;
 }
 body h2 {
+  text-shadow: 1px 2px 2px #3d2c9d;
   font-size: 3rem;
   font-weight: 700rem;
+}
+body h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 body strong,
 body bold {
@@ -108,12 +136,8 @@ main.content {
   background: linear-gradient(180deg, rgb(61, 44, 157) 5%, rgb(244, 178, 255) 60%, rgb(244, 178, 255) 75%, rgb(247, 242, 255) 95%);
 }
 
-.foo,
 .links > li {
   text-align: center;
-}
-
-.links > li {
   font-size: 1.2rem;
   font-family: "Azeret Mono", monospace;
   font-weight: 800;
@@ -123,7 +147,8 @@ main.content {
   text-decoration: 0.5rem underline #00a398;
 }
 .links > li a:hover {
-  text-decoration: 0.5rem underline #f4b2ff;
+  transition: text-decoration 500ms 200ms;
+  text-decoration: 0.5rem underline #261f5b;
 }
 
 .foo {
