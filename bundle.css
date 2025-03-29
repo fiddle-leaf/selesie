@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+/*  IDs
+ *      */
+#intro {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+/*  CLASSES
+ *      */
 .page {
   display: flex;
   flex-flow: column nowrap;
   gap: 0;
-  align-items: flex-start;
-  background: #f7f2ff;
+  background: #3d2c9d;
   min-height: 100vh;
   width: auto;
 }
 
 main.content {
   flex: 1;
-  align-self: center;
-  background: blue;
-  width: 80vw;
   height: auto;
 }
 
@@ -22,12 +27,25 @@ main.content {
   width: 100%;
 }
 
-.foo {
+.head header {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0;
+  align-items: flex-start;
   padding: 1rem;
-  font-size: 0.75rem;
+}
+.head header p {
+  flex: 0;
 }
 
-#links {
+.foo {
+  font-size: 0.75rem;
+}
+.foo footer {
+  padding: 1rem;
+}
+
+.links {
   display: flex;
   flex-flow: row nowrap;
   gap: 1rem;
@@ -35,14 +53,14 @@ main.content {
   list-style-type: none;
   padding-block: 1rem;
 }
-#links li {
+.links li {
   flex: 1;
 }
 
 body {
   margin: 0;
-  background: #f7f2ff;
-  color: #18161d;
+  background: #3d2c9d;
+  color: #f7f2ff;
   font-size: 14px;
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
@@ -62,23 +80,49 @@ body h6,
 body .foo {
   font-family: "Azeret Mono", monospace;
 }
+body h1 {
+  color: #f4b2ff;
+  letter-spacing: -0.25rem;
+  font-size: 4rem;
+  font-weight: 900;
+}
+body h2 {
+  font-size: 3rem;
+  font-weight: 700rem;
+}
+body strong,
+body bold {
+  font-weight: 800;
+}
+
+#intro {
+  color: #3d2c9d;
+  background: #f7f2ff;
+  border-radius: 0 10px 10px 10px;
+  box-shadow: 2px 2px #00a398;
+  border: 1px solid #00a398;
+}
+
+main.content {
+  background: #f4b2ff;
+}
 
 .foo,
-#links > li {
+.links > li {
   text-align: center;
 }
 
-#links > li {
+.links > li {
   font-size: 1.2rem;
   font-family: "Azeret Mono", monospace;
   font-weight: 800;
 }
-#links > li a {
-  color: #3d2c9d;
-  text-decoration: 0.5rem underline #40807e;
+.links > li a {
+  color: #f7f2ff;
+  text-decoration: 0.5rem underline #00a398;
 }
-#links > li a:hover {
-  text-decoration: 0.5rem underline #18161d;
+.links > li a:hover {
+  text-decoration: 0.5rem underline #f4b2ff;
 }
 
 .foo {

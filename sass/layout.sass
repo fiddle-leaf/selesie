@@ -1,28 +1,51 @@
 @use 'defaults' as *
 
+/*
+    IDs
+        */
+
+#intro
+    margin: calc($cushion/2)
+    padding: calc( $cushion/2 )
+
+
+/*
+    CLASSES
+        */
+
 .page
     +grid($flow: column, $wrap: nowrap)
-    align-items: flex-start
+    //align-items: flex-start
     background: $primary  
     min-height: 100vh
     width: auto
     
 main.content
     flex: 1
-    align-self: center
-    background: blue
-    width: 80vw
+    //width: 80vw
     height: auto
 
 .head,
 .foo
     width: 100%
 
+.head
+    header
+        +grid($flow: column)
+        align-items: flex-start
+        padding: $cushion
+
+
+        p
+            flex: 0
+
 .foo
-    padding: $cushion
     font-size: calc( $cushion * 0.75 )
 
-#links
+    footer
+        padding: $cushion
+
+.links
     +grid($wrap: nowrap, $gap: $cushion)
     justify-content: space-around
     list-style-type: none
