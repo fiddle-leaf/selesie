@@ -104,7 +104,8 @@ body bold {
 }
 
 main.content {
-  background: #f4b2ff;
+  background: rgb(61, 44, 157);
+  background: linear-gradient(180deg, rgb(61, 44, 157) 5%, rgb(244, 178, 255) 60%, rgb(244, 178, 255) 75%, rgb(247, 242, 255) 95%);
 }
 
 .foo,
@@ -126,6 +127,8 @@ main.content {
 }
 
 .foo {
+  color: #3d2c9d;
+  background: #f7f2ff;
   font-weight: 600;
 }
 
