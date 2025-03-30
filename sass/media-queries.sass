@@ -28,10 +28,14 @@
             order: 1
 
         header
-            flex: 3           
+            flex: 3       
+    
     .links
         +grid($flow: column, $gap: $cushion) 
         align-items: flex-start
+
+    .foo>.credits
+        font-size: calc( $cushion*0.6 )
 
 
 /* Portrait */

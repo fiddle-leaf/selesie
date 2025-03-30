@@ -86,11 +86,17 @@ div.page
         text-decoration: $bit underline $accent-3  
 
 .credits
+    transition: font-size 1s
+    font:
+        size: calc( $cushion*0.7 )
+        weight: 400
 
-    p
-        font:
-            size: calc( $cushion*0.7 )
-            weight: 400
+
+    ul
+        padding-block-start: $bit
+
+    li
+        margin-inline-start: $cushion
 
 .foo
     color: $primary

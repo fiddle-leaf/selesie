@@ -33,6 +33,9 @@
     gap: 1rem;
     align-items: flex-start;
   }
+  .foo > .credits {
+    font-size: 0.6rem;
+  }
 }
 /* Portrait */
 @media screen and (orientation: portrait) {
@@ -204,9 +207,16 @@ div.page {
   text-decoration: 0.5rem underline #261f5b;
 }
 
-.credits p {
+.credits {
+  transition: font-size 1s;
   font-size: 0.7rem;
   font-weight: 400;
+}
+.credits ul {
+  padding-block-start: 0.5rem;
+}
+.credits li {
+  margin-inline-start: 1rem;
 }
 
 .foo {
