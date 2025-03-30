@@ -15,6 +15,7 @@ body
         +reset-list
 
     a
+        font-weight: 700
         text-decoration: 2px underline $accent-2
 
     a:visited
@@ -40,15 +41,16 @@ body
             weight: 900
 
     h2
-        text-shadow: 1px 2px 2px $primary
+        text-shadow:  -1px -1px -1px $accent, 1px 2px 2px $primary
         font:
-            size: 3rem
-            weight: 700rem
+            size: 2rem
+            weight: 800
 
     h4
+        text-transform: uppercase
         font:
-            size: 1.2rem
-            weight: 500
+            size: calc($cushion*0.9)
+            weight: 600
 
     strong, 
     bold
@@ -61,13 +63,14 @@ body
     box-shadow: 2px 2px $accent-2
     border: 1px solid $accent-2
 
-main.content
-    //background: $accent
+div.page
     background: rgb(61,44,157)
-    background: linear-gradient(180deg, rgba(61,44,157,1) 5%, rgba(244,178,255,1) 60%, rgba(244,178,255,1) 75%, rgba(247,242,255,1) 95%)
+    background: linear-gradient(180deg, rgba(61,44,157,1) 30%, rgba(244,178,255,1) 60%, rgba(247,242,255,1) 85%)
+
 
 
 .links>li
+    list-style: none
     text-align: center
     font:
         size: 1.2rem
@@ -82,8 +85,13 @@ main.content
         transition: text-decoration 500ms 200ms
         text-decoration: $bit underline $accent-3  
 
+.credits
+
+    p
+        font:
+            size: calc( $cushion*0.7 )
+            weight: 400
 
 .foo
     color: $primary
-    background: $secondary
     font-weight: 600

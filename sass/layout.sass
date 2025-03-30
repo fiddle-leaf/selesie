@@ -1,19 +1,24 @@
+/*
+    module for layout defaults
+    */ 
 @use 'defaults' as *
+@use 'media-queries'
 
 /*
     IDs
         */
 
 #intro
-    margin: calc($cushion/2)
-    padding: calc( $cushion/2 )
+    margin: $bit
+    padding: $bit
+
 
 
 /*
     CLASSES
         */
 
-.page
+.page                                   //app class
     +grid($flow: column, $wrap: nowrap)
     //align-items: flex-start
     background: $primary  
@@ -21,14 +26,25 @@
     width: auto
     
 main.content
-    //padding: calc( $cushion/2 )
-    flex: 1
     +grid($flow: column)
-    //width: 80vw
-    height: auto
+    padding-block: calc($cushion)
+    align-items: center
+    height: 100%
+    flex: 1
+
+    article
+        +grid($flow: row, $wrap: wrap)
+        flex: 1
+        align-items: stretch
+        justify-content: center
+        width: 90vw
+
+
+    
 
 .head,
 .foo
+    flex: 0
     width: 100%
 
 .head
@@ -42,7 +58,7 @@ main.content
             flex: 0
 
 .foo
-    +grid($flow: column)
+    +grid($flow: column, $gap: 0)
     justify-content: flex-start
     font-size: calc( $cushion * 0.75 )
 
@@ -50,17 +66,9 @@ main.content
         margin: $cushion
 
         p
-            padding-block: calc( $cushion/2 )
+            padding-block: $bit
 
     footer
+        padding-block: $cushion
         align-self: center
-        padding: $cushion
 
-.links
-    +grid($wrap: nowrap, $gap: $cushion)
-    justify-content: space-around
-    list-style-type: none
-    padding-block: $cushion
-
-    li
-        flex: 1

@@ -1,4 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+/*  module for layout defaults
+ *  */
+/**
+ * * Basic CSS Media Query Template
+ * * TODO: I should probably use Sass...
+ * * Author: Michael Vieth
+ * * ------------------------------------------
+ * *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ * *   1280-1024   - desktop (default grid)
+ * *   1024-768    - tablet landscape
+ * *   768-480     - tablet 
+ * *   480-less    - phone landscape & smaller
+ * * --------------------------------------------
+ * */
+@media all and (max-width: 480px) {
+  .head {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0;
+    align-items: center;
+  }
+  .head nav {
+    flex: 1;
+    order: 1;
+  }
+  .head header {
+    flex: 3;
+  }
+  .links {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
+/* Portrait */
+@media screen and (orientation: portrait) {
+  /* Portrait styles here */
+}
+/* Landscape */
+@media screen and (orientation: landscape) {
+  /* Landscape styles here */
+}
+/* CSS for iPhone, iPad, and Retina Displays */
+/* Non-Retina */
+/* Retina */
+/* iPhone Portrait */
+/* iPhone Landscape */
+/* iPad Portrait */
+/* iPad Landscape */
 /*  IDs
  *      */
 #intro {
@@ -18,15 +68,27 @@
 }
 
 main.content {
-  flex: 1;
   display: flex;
   flex-flow: column wrap;
   gap: 0;
-  height: auto;
+  padding-block: 1rem;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+}
+main.content article {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0;
+  flex: 1;
+  align-items: stretch;
+  justify-content: center;
+  width: 90vw;
 }
 
 .head,
 .foo {
+  flex: 0;
   width: 100%;
 }
 
@@ -55,20 +117,8 @@ main.content {
   padding-block: 0.5rem;
 }
 .foo footer {
-  align-self: center;
-  padding: 1rem;
-}
-
-.links {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 1rem;
-  justify-content: space-around;
-  list-style-type: none;
   padding-block: 1rem;
-}
-.links li {
-  flex: 1;
+  align-self: center;
 }
 
 body {
@@ -86,6 +136,7 @@ body * {
   box-sizing: border-box;
 }
 body a {
+  font-weight: 700;
   text-decoration: 2px underline #00a398;
 }
 body a:visited {
@@ -110,13 +161,14 @@ body h1 {
   font-weight: 900;
 }
 body h2 {
-  text-shadow: 1px 2px 2px #3d2c9d;
-  font-size: 3rem;
-  font-weight: 700rem;
+  text-shadow: -1px -1px -1px #f4b2ff, 1px 2px 2px #3d2c9d;
+  font-size: 2rem;
+  font-weight: 800;
 }
 body h4 {
-  font-size: 1.2rem;
-  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 body strong,
 body bold {
@@ -131,12 +183,13 @@ body bold {
   border: 1px solid #00a398;
 }
 
-main.content {
+div.page {
   background: rgb(61, 44, 157);
-  background: linear-gradient(180deg, rgb(61, 44, 157) 5%, rgb(244, 178, 255) 60%, rgb(244, 178, 255) 75%, rgb(247, 242, 255) 95%);
+  background: linear-gradient(180deg, rgb(61, 44, 157) 30%, rgb(244, 178, 255) 60%, rgb(247, 242, 255) 85%);
 }
 
 .links > li {
+  list-style: none;
   text-align: center;
   font-size: 1.2rem;
   font-family: "Azeret Mono", monospace;
@@ -151,9 +204,13 @@ main.content {
   text-decoration: 0.5rem underline #261f5b;
 }
 
+.credits p {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
 .foo {
   color: #3d2c9d;
-  background: #f7f2ff;
   font-weight: 600;
 }
 
