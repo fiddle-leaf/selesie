@@ -19,6 +19,12 @@
 @media all and (min-width: 480px) and (max-width: 768px)  
 
 @media all and (max-width: 480px) 
+    #titles
+        +grid($flow: row, $wrap: nowrap, $gap: $cushion)
+        
+        h2
+            font-size: calc($cushion*1.5)
+
     .head
         +grid($flow: row, $wrap: nowrap)
         align-items: center
@@ -33,6 +39,9 @@
     .links
         +grid($flow: column, $gap: $cushion) 
         align-items: flex-start
+
+    main.content>article
+        +grid($flow: column, $gap: $cushion)
 
     .foo>.credits
         font-size: calc( $cushion*0.6 )

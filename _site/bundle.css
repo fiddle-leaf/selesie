@@ -14,6 +14,14 @@
  * * --------------------------------------------
  * */
 @media all and (max-width: 480px) {
+  #titles {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+  }
+  #titles h2 {
+    font-size: 1.5rem;
+  }
   .head {
     display: flex;
     flex-flow: row nowrap;
@@ -32,6 +40,11 @@
     flex-flow: column wrap;
     gap: 1rem;
     align-items: flex-start;
+  }
+  main.content > article {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
   }
   .foo > .credits {
     font-size: 0.6rem;
@@ -64,7 +77,7 @@
 .page {
   display: flex;
   flex-flow: column nowrap;
-  gap: 0;
+  gap: 1rem;
   min-height: 100vh;
   width: auto;
 }
@@ -77,14 +90,6 @@ main.content {
   align-items: stretch;
   height: 100%;
   flex: 1;
-}
-main.content article {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 0;
-  flex: 1;
-  align-items: stretch;
-  justify-content: center;
 }
 
 .head,
@@ -126,7 +131,7 @@ body {
   margin: 0;
   background: rgb(61, 44, 157);
   background: linear-gradient(180deg, rgb(61, 44, 157) 30%, rgb(247, 242, 255) 60%, rgb(244, 178, 255) 85%);
-  color: #f7f2ff;
+  color: #3d2c9d;
   font-size: 14px;
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
@@ -163,6 +168,9 @@ body h1 {
   font-weight: 900;
 }
 body h2 {
+  text-decoration: 5px underline #00a398;
+  letter-spacing: -0.05rem;
+  text-transform: lowercase;
   text-shadow: -1px -1px -1px #f4b2ff, 1px 2px 2px #3d2c9d;
   font-size: 2rem;
   font-weight: 800;
@@ -178,9 +186,8 @@ body bold {
 }
 
 #intro {
-  color: #3d2c9d;
   background: #f7f2ff;
-  border-radius: 0 10px 10px 10px;
+  border-radius: 0px 10px 10px 10px;
   box-shadow: 2px 2px #00a398;
   border: 1px solid #00a398;
 }
@@ -191,8 +198,13 @@ main.content {
   background-size: 2px;
 }
 main.content article {
+  padding: 1rem;
   border-radius: 10px;
   background: #f7f2ff;
+}
+
+#entries {
+  background: red;
 }
 
 .links > li {
@@ -223,13 +235,9 @@ main.content article {
   margin-inline-start: 1rem;
 }
 
-.foo {
-  color: #3d2c9d;
-}
-
 #copyright {
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 0.6rem;
 }
 

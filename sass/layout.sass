@@ -18,8 +18,8 @@
     CLASSES
         */
 
-.page                                   //app class
-    +grid($flow: column, $wrap: nowrap)
+.page   //app class
+    +grid($flow: column, $wrap: nowrap, $gap: $cushion)
     //align-items: flex-start
     min-height: 100vh
     width: auto
@@ -31,11 +31,7 @@ main.content
     height: 100%
     flex: 1
 
-    article
-        +grid($flow: row, $wrap: wrap)
-        flex: 1
-        align-items: stretch
-        justify-content: center
+   
 
 
 

@@ -5,7 +5,7 @@ body
     margin: 0
     background: rgb(61,44,157)
     background: (linear-gradient(180deg, rgba(61,44,157,1) 30%,  rgba(247,242,255,1) 60%, rgba(244,178,255,1) 85%,)),
-    color: $secondary
+    color: $primary
     font:
         size: 14px
         family: $text
@@ -17,7 +17,7 @@ body
 
     a
         font-weight: 700
-        text-decoration: 2px underline $accent-2
+        +underline($size: 2px, $color: $accent-2)
 
     a:visited
         color: $accent-3
@@ -42,7 +42,11 @@ body
             weight: 900
 
     h2
-        text-shadow:  -1px -1px -1px $accent, 1px 2px 2px $primary
+        +underline($size: 5px, $color: $accent-2)
+        letter-spacing: -(calc($cushion*0.05))
+        text:
+            transform: lowercase
+            shadow:  -1px -1px -1px $accent, 1px 2px 2px $primary
         font:
             size: 2rem
             weight: 800
@@ -58,9 +62,8 @@ body
         font-weight: 800
 
 #intro
-    color: $primary
     background: $secondary
-    border-radius: 0 10px 10px 10px
+    border-radius: 0px 10px 10px 10px
     box-shadow: 2px 2px $accent-2
     border: 1px solid $accent-2
 
@@ -68,11 +71,16 @@ main.content
     border-radius: 20px
     background: url('https://i.imgur.com/fdxdyuh.png') repeat
     background-size: 2px
+    
         //opacity: 0.3
         
     article
+        padding: $cushion
         border-radius: 10px
         background: $secondary
+
+#entries
+    background: red
 
 
 .links>li
@@ -85,7 +93,7 @@ main.content
 
     a
         color: $secondary
-        text-decoration: $bit underline $accent-2
+        +underline($size: $bit, $color: $accent-2)
 
     a:hover
         transition: text-decoration 500ms 200ms
@@ -104,12 +112,9 @@ main.content
     li
         margin-inline-start: $cushion
 
-.foo
-    color: $primary
-
 #copyright
     text-transform: uppercase
     font:
-        weight: 800
+        weight: 700
         size: calc($cushion*0.6)
 
