@@ -3,7 +3,8 @@
 
 body 
     margin: 0
-    background: $primary
+    background: rgb(61,44,157)
+    background: (linear-gradient(180deg, rgba(61,44,157,1) 30%,  rgba(247,242,255,1) 60%, rgba(244,178,255,1) 85%,)),
     color: $secondary
     font:
         size: 14px
@@ -63,10 +64,15 @@ body
     box-shadow: 2px 2px $accent-2
     border: 1px solid $accent-2
 
-div.page
-    background: rgb(61,44,157)
-    background: linear-gradient(180deg, rgba(61,44,157,1) 30%, rgba(244,178,255,1) 60%, rgba(247,242,255,1) 85%)
-
+main.content
+    border-radius: 20px
+    background: url('https://i.imgur.com/fdxdyuh.png') repeat
+    background-size: 2px
+        //opacity: 0.3
+        
+    article
+        border-radius: 10px
+        background: $secondary
 
 
 .links>li
@@ -100,4 +106,10 @@ div.page
 
 .foo
     color: $primary
-    font-weight: 600
+
+#copyright
+    text-transform: uppercase
+    font:
+        weight: 800
+        size: calc($cushion*0.6)
+

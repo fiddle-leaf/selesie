@@ -21,14 +21,13 @@
 .page                                   //app class
     +grid($flow: column, $wrap: nowrap)
     //align-items: flex-start
-    background: $primary  
     min-height: 100vh
     width: auto
     
 main.content
     +grid($flow: column)
-    padding-block: calc($cushion)
-    align-items: center
+    padding: $cushion
+    align-items: stretch
     height: 100%
     flex: 1
 
@@ -37,7 +36,7 @@ main.content
         flex: 1
         align-items: stretch
         justify-content: center
-        width: 90vw
+
 
 
     
