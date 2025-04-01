@@ -41,7 +41,16 @@
         align-items: flex-start
 
     main.content>article
+        +grid($flow: column)
+        flex: 1
+
+    #entries
+        flex: 1
+
+    .projects
         +grid($flow: column, $gap: $cushion)
+        align-items: flex-start
+
 
     .foo>.credits
         font-size: calc( $cushion*0.6 )

@@ -44,7 +44,17 @@
   main.content > article {
     display: flex;
     flex-flow: column wrap;
+    gap: 0;
+    flex: 1;
+  }
+  #entries {
+    flex: 1;
+  }
+  .projects {
+    display: flex;
+    flex-flow: column wrap;
     gap: 1rem;
+    align-items: flex-start;
   }
   .foo > .credits {
     font-size: 0.6rem;
@@ -86,7 +96,6 @@ main.content {
   display: flex;
   flex-flow: column wrap;
   gap: 0;
-  padding: 1rem;
   align-items: stretch;
   height: 100%;
   flex: 1;
@@ -168,7 +177,6 @@ body h1 {
   font-weight: 900;
 }
 body h2 {
-  text-decoration: 5px underline #00a398;
   letter-spacing: -0.05rem;
   text-transform: lowercase;
   text-shadow: -1px -1px -1px #f4b2ff, 1px 2px 2px #3d2c9d;
@@ -186,25 +194,38 @@ body bold {
 }
 
 #intro {
-  background: #f7f2ff;
+  background: #ffffff;
   border-radius: 0px 10px 10px 10px;
   box-shadow: 2px 2px #00a398;
   border: 1px solid #00a398;
 }
 
 main.content {
-  border-radius: 20px;
-  background: url("https://i.imgur.com/fdxdyuh.png") repeat;
-  background-size: 2px;
+  padding: 1rem;
 }
 main.content article {
-  padding: 1rem;
-  border-radius: 10px;
-  background: #f7f2ff;
+  background: url("https://i.imgur.com/fdxdyuh.png") repeat;
+  background-size: 2px;
+  border-radius: 0 0 10px 10px;
+  border: 0.1rem solid #3d2c9d;
 }
 
-#entries {
-  background: red;
+#titles {
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  background: #3d2c9d;
+  border-radius: 10px 10px 0 0;
+}
+
+#entries > div {
+  padding: 1rem;
+}
+
+.projects div {
+  background: #f4b2ff;
+  box-shadow: 2px 2px #3d2c9d;
+  border-radius: 2px;
+  padding: 0.25rem 0.5rem;
 }
 
 .links > li {
@@ -215,7 +236,7 @@ main.content article {
   font-weight: 800;
 }
 .links > li a {
-  color: #f7f2ff;
+  color: #ffffff;
   text-decoration: 0.5rem underline #00a398;
 }
 .links > li a:hover {

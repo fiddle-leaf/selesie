@@ -42,7 +42,7 @@ body
             weight: 900
 
     h2
-        +underline($size: 5px, $color: $accent-2)
+        //+underline($size: $bit, $color: $primary)
         letter-spacing: -(calc($cushion*0.05))
         text:
             transform: lowercase
@@ -68,19 +68,31 @@ body
     border: 1px solid $accent-2
 
 main.content
-    border-radius: 20px
-    background: url('https://i.imgur.com/fdxdyuh.png') repeat
-    background-size: 2px
-    
-        //opacity: 0.3
-        
-    article
-        padding: $cushion
-        border-radius: 10px
-        background: $secondary
+    padding: $cushion 
 
-#entries
-    background: red
+    article
+        background: url('https://i.imgur.com/fdxdyuh.png') repeat
+        background-size: 2px
+        border-radius: 0 0 10px 10px
+        border: 0.1rem solid $primary
+        
+
+#titles
+    color: $secondary
+    padding: $bit $cushion
+    background: $primary
+    border-radius: 10px 10px 0 0
+
+#entries>div
+    padding: $cushion
+
+.projects
+    div
+        background: $accent
+        box-shadow: 2px 2px $primary
+        border-radius: 2px
+        padding: (calc($cushion/4)) $bit
+
 
 
 .links>li
