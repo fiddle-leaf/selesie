@@ -101,6 +101,18 @@ main.content {
   flex: 1;
 }
 
+.projects div {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0;
+}
+.projects div h3 {
+  flex: 0;
+}
+.projects div p {
+  flex: 1;
+}
+
 .head,
 .foo {
   flex: 0;
@@ -201,13 +213,15 @@ body bold {
 }
 
 main.content {
-  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 1px 1px 5px -3px #3d2c9d, -1px -1px 5px -3px #3d2c9d;
+  border-radius: 10px;
 }
 main.content article {
   background: url("https://i.imgur.com/fdxdyuh.png") repeat;
   background-size: 2px;
   border-radius: 0 0 10px 10px;
-  border: 0.1rem solid #3d2c9d;
+  border: 1px dotted #261f5b;
 }
 
 #titles {
@@ -215,6 +229,9 @@ main.content article {
   padding: 0.5rem 1rem;
   background: #3d2c9d;
   border-radius: 10px 10px 0 0;
+  box-shadow: 0 1px 1px -1px #261f5b;
+  border-inline: 1px solid #3d2c9d;
+  border-block-start: 1px solid #3d2c9d;
 }
 
 #entries > div {
@@ -222,10 +239,19 @@ main.content article {
 }
 
 .projects div {
+  border: 1px groove #3d2c9d;
+  box-shadow: 2px 2px 1px -2px #3d2c9d;
+}
+.projects div h3 {
+  border-radius: 2px 2px 0 0;
   background: #f4b2ff;
-  box-shadow: 2px 2px #3d2c9d;
-  border-radius: 2px;
   padding: 0.25rem 0.5rem;
+  border-bottom: 1px dotted #3d2c9d;
+}
+.projects div p {
+  font-weight: 500;
+  background: #ffffff;
+  padding: 0.5rem;
 }
 
 .links > li {

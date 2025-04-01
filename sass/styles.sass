@@ -68,13 +68,16 @@ body
     border: 1px solid $accent-2
 
 main.content
-    padding: $cushion 
+    margin: $cushion 
+    box-shadow: 1px 1px 5px -3px $primary, -1px -1px 5px -3px $primary
+    border-radius: 10px
 
     article
         background: url('https://i.imgur.com/fdxdyuh.png') repeat
         background-size: 2px
         border-radius: 0 0 10px 10px
-        border: 0.1rem solid $primary
+        border: 1px dotted $accent-3
+        
         
 
 #titles
@@ -82,16 +85,28 @@ main.content
     padding: $bit $cushion
     background: $primary
     border-radius: 10px 10px 0 0
+    box-shadow: 0 1px 1px -1px $accent-3
+    border-inline: 1px solid $primary
+    border-block-start: 1px solid $primary
 
 #entries>div
     padding: $cushion
 
 .projects
     div
-        background: $accent
-        box-shadow: 2px 2px $primary
-        border-radius: 2px
-        padding: (calc($cushion/4)) $bit
+        border: 1px groove $primary
+        box-shadow: 2px 2px 1px -2px $primary
+        
+        h3
+            border-radius: 2px 2px 0 0
+            background: $accent
+            padding: (calc($cushion/4)) $bit
+            border-bottom: 1px dotted $primary
+
+        p
+            font-weight: 500
+            background: $secondary
+            padding: $bit
 
 
 
