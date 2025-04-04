@@ -20,7 +20,7 @@
     gap: 1rem;
   }
   #titles h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .head {
     display: flex;
@@ -151,7 +151,7 @@ main.content {
 body {
   margin: 0;
   background: rgb(61, 44, 157);
-  background: linear-gradient(180deg, rgb(61, 44, 157) 30%, rgb(247, 242, 255) 60%, rgb(244, 178, 255) 85%);
+  background: linear-gradient(180deg, rgb(61, 44, 157) 28%, rgb(247, 242, 255) 50%, rgb(244, 178, 255) 90%);
   color: #3d2c9d;
   font-size: 14px;
   font-family: "Mulish", sans-serif;
@@ -166,6 +166,7 @@ body * {
 body a {
   font-weight: 700;
   text-decoration: 2px underline #00a398;
+  text-underline-offset: 2px;
 }
 body a:visited {
   color: #261f5b;
@@ -191,9 +192,14 @@ body h1 {
 body h2 {
   letter-spacing: -0.05rem;
   text-transform: lowercase;
-  text-shadow: -1px -1px -1px #f4b2ff, 1px 2px 2px #3d2c9d;
+  text-shadow: -1px -1px #00a398, 1px 1px #f4b2ff;
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 700;
+}
+body h3 {
+  letter-spacing: -0.025rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 body h4 {
   text-transform: uppercase;
@@ -232,6 +238,7 @@ main.content article {
   box-shadow: 0 1px 1px -1px #261f5b;
   border-inline: 1px solid #3d2c9d;
   border-block-start: 1px solid #3d2c9d;
+  border-block-end: 1px solid #261f5b;
 }
 
 #entries > div {
@@ -246,12 +253,13 @@ main.content article {
   border-radius: 2px 2px 0 0;
   background: #f4b2ff;
   padding: 0.25rem 0.5rem;
-  border-bottom: 1px dotted #3d2c9d;
+  border-bottom: 1px dotted #261f5b;
 }
 .projects div p {
-  font-weight: 500;
   background: #ffffff;
   padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .links > li {
