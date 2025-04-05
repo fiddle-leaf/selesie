@@ -82,6 +82,10 @@
   padding: 0.5rem;
 }
 
+#titles {
+  flex: 1;
+}
+
 /*  CLASSES
  *      */
 .page {
@@ -133,25 +137,22 @@ main.content {
 .foo {
   display: flex;
   flex-flow: column wrap;
-  gap: 0;
+  gap: 0.5rem;
   justify-content: flex-start;
   font-size: 0.75rem;
+  padding: 1rem;
 }
-.foo div {
-  margin: 1rem;
-}
-.foo div p {
-  padding-block: 0.5rem;
+.foo .credits {
+  flex: 0;
 }
 .foo footer {
-  padding-block: 1rem;
   align-self: center;
 }
 
 body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(254, 242, 255) 10%, rgb(244, 178, 255) 40%, rgb(61, 44, 157) 75%);
   margin: 0;
-  background: rgb(61, 44, 157);
-  background: linear-gradient(180deg, rgb(61, 44, 157) 28%, rgb(247, 242, 255) 50%, rgb(244, 178, 255) 90%);
   color: #3d2c9d;
   font-size: 14px;
   font-family: "Mulish", sans-serif;
@@ -211,6 +212,11 @@ body bold {
   font-weight: 800;
 }
 
+div.page {
+  background: url("https://i.imgur.com/fdxdyuh.png") repeat;
+  background-size: 2px;
+}
+
 #intro {
   background: #ffffff;
   border-radius: 0px 10px 10px 10px;
@@ -220,14 +226,13 @@ body bold {
 
 main.content {
   margin: 1rem;
-  box-shadow: 1px 1px 5px -3px #3d2c9d, -1px -1px 5px -3px #3d2c9d;
   border-radius: 10px;
+  border: 1px solid #3d2c9d;
+  box-shadow: 1px 1px #3d2c9d;
 }
 main.content article {
-  background: url("https://i.imgur.com/fdxdyuh.png") repeat;
-  background-size: 2px;
+  background: #fbdcff;
   border-radius: 0 0 10px 10px;
-  border: 1px dotted #261f5b;
 }
 
 #titles {
@@ -278,8 +283,18 @@ main.content article {
   text-decoration: 0.5rem underline #261f5b;
 }
 
+.foo footer {
+  padding-block-start: 0.5rem;
+  padding-block-end: 1rem;
+}
+
 .credits {
+  border: 1px solid #fbdcff;
+  box-shadow: 2px 2px #fbdcff;
+  background: #ffffff;
+  border-radius: 10px;
   transition: font-size 1s;
+  padding: 0.5rem;
   font-size: 0.7rem;
   font-weight: 400;
 }
@@ -292,6 +307,7 @@ main.content article {
 
 #copyright {
   text-transform: uppercase;
+  color: #261f5b;
   font-weight: 700;
   font-size: 0.6rem;
 }

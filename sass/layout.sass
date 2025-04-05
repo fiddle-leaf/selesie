@@ -12,6 +12,8 @@
     margin: $bit
     padding: $bit
 
+#titles
+    flex: 1
 
 
 /*
@@ -29,6 +31,7 @@ main.content
     align-items: stretch
     height: 100%
     flex: 1
+
 
 .projects
     div
@@ -56,17 +59,14 @@ main.content
             flex: 0
 
 .foo
-    +grid($flow: column, $gap: 0)
+    +grid($flow: column, $gap: $bit)
     justify-content: flex-start
     font-size: calc( $cushion * 0.75 )
+    padding: $cushion
 
-    div
-        margin: $cushion
-
-        p
-            padding-block: $bit
+    .credits
+        flex: 0
 
     footer
-        padding-block: $cushion
         align-self: center
 

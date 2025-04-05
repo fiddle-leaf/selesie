@@ -2,9 +2,9 @@
 @use 'layout'
 
 body 
+    background: rgb(255,255,255)
+    background: linear-gradient(0deg, rgba(254,242,255,1) 10%, rgba(244,178,255,1) 40%, rgba(61,44,157,1) 75%)
     margin: 0
-    background: rgb(61,44,157)
-    background: (linear-gradient(180deg, rgba(61,44,157,1) 28%,  rgba(247,242,255,1) 50%, rgba(244,178,255,1) 90%,)),
     color: $primary
     font:
         size: 14px
@@ -67,6 +67,10 @@ body
     bold
         font-weight: 800
 
+div.page
+    background: url('https://i.imgur.com/fdxdyuh.png') repeat
+    background-size: 2px
+
 #intro
     background: $secondary
     border-radius: 0px 10px 10px 10px
@@ -74,18 +78,15 @@ body
     border: 1px solid $accent-2
 
 main.content
-    margin: $cushion 
-    box-shadow: 1px 1px 5px -3px $primary, -1px -1px 5px -3px $primary
+    margin: $cushion
     border-radius: 10px
-
-
+    border: 1px solid $primary
+    box-shadow: 1px 1px $primary
 
     article
-        background: url('https://i.imgur.com/fdxdyuh.png') repeat
-        background-size: 2px
+        background: $accent-4
         border-radius: 0 0 10px 10px
-        border: 1px dotted $accent-3
-        
+        //border: 1px solid $accent-3
         
 
 #titles
@@ -137,8 +138,19 @@ main.content
         transition: text-decoration 500ms 200ms
         text-decoration: $bit underline $accent-3  
 
+.foo
+
+    footer
+        padding-block-start: $bit
+        padding-block-end: $cushion
+
 .credits
+    border: 1px solid $accent-4
+    box-shadow: 2px 2px $accent-4
+    background: $secondary
+    border-radius: 10px
     transition: font-size 1s
+    padding: $bit
     font:
         size: calc( $cushion*0.7 )
         weight: 400
@@ -151,6 +163,7 @@ main.content
 
 #copyright
     text-transform: uppercase
+    color: $accent-3
     font:
         weight: 700
         size: calc($cushion*0.6)
